@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pydev-testrun version="1.0"?><pydev-testsuite>
+<summary errors="1" failures="0" finished="true" name="Test Run: 27" tests="0" total_time="Finished in: 0.00 secs."/>
+<test location="F:\workspace\game2_httpTest\testCase\gamesdk\userlogin.py" status="error" test="userlogin" time="0">
+<stdout/>
+<stderr><![CDATA[Traceback (most recent call last):
+  File "F:\eclipse_neon64\dropins\plugins\org.python.pydev.core_6.3.2.201803171248\pysrc\_pydev_runfiles\pydev_runfiles.py", line 468, in __get_module_from_str
+    mod = __import__(modname)
+  File "F:/workspace/game2_httpTest/testCase/gamesdk\userlogin.py", line 10, in <module>
+    productInfo_xls = commonAw.get_xls("gamesdk.xlsx", "userlogin")
+  File "F:\workspace\game2_httpTest\common\commonAw.py", line 79, in get_xls
+    file = open_workbook(xlsPath)
+  File "D:\Python\lib\site-packages\xlrd\__init__.py", line 116, in open_workbook
+    with open(filename, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'F:\\workspace\\game2_httpTest\\testFile\\case\\gamesdk.xlsx'
+ERROR: Module: userlogin could not be imported (file: F:\workspace\game2_httpTest\testCase\gamesdk\userlogin.py).
+]]></stderr>
+</test>
+<launch mode="run">
+<launch_memento><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration local="true" path="game2_httpTest userlogin.py"/>
+]]></launch_memento>
+</launch>
+</pydev-testsuite>

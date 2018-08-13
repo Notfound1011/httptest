@@ -1,0 +1,83 @@
+'''
+Created on 2018年7月20日
+手机号注册
+@author: Admin
+'''
+#! /usr/bin/env python
+#coding=utf-8
+from common import commonAw
+from common.Elements import element
+import unittest
+import readConfig as readConfig
+from common import configDB
+from asyncio.tasks import sleep
+localReadConfig = readConfig.ReadConfig()
+localConfigDB = configDB.MyDB()
+
+
+class Personalaccount_login(unittest.TestCase):
+    def description(self):
+        """
+
+        :return:
+        """
+        self.case_name
+    def setUp(self):
+        localConfigDB.connectDB()
+        cursor1=localConfigDB.executeSQL('SELECT count(*) FROM g_user;')
+        self.res1=localConfigDB.get_one(cursor1)
+        cursor2=localConfigDB.executeSQL('SELECT count(*) FROM g_game_account;')
+        self.res2=localConfigDB.get_one(cursor2)
+        cursor3=localConfigDB.executeSQL('SELECT count(*) FROM g_login_record;')
+        self.res3=localConfigDB.get_one(cursor3)
+        '''启动APK'''
+        #读取配置文件里的设备信息
+        self.platformVersion = localReadConfig.dev_huaweiP10('platformVersion')
+        self.deviceName = localReadConfig.dev_huaweiP10('deviceName')
+        self.appPackage = localReadConfig.dev_huaweiP10('appPackage')
+        self.appActivity = localReadConfig.dev_huaweiP10('appActivity')
+                
+        self.desired_caps=commonAw.android_desired_caps(platformVersion=self.platformVersion, 
+                                        deviceName=self.deviceName,
+                                        appPackage=self.appPackage, appActivity=self.appActivity)
+        self.driver=commonAw.android_driver(self.desired_caps)
+         
+        '''设置测试服务器地址、游戏id'''
+        self.driver.find_element_by_id(element.url3).click()
+        self.driver.find_element_by_id(element.game_id).send_keys('1019')
+        self.driver.find_element_by_id(element.setting).click()
+         
+    def testLogin(self):
+        '''登陆时会记录上次账号信息，增加显示等待，切换账号元素出现时，点击切换账号'''
+        self.driver.find_element_by_id(element.login).click()
+        commonAw.is_visible(self.driver, locator=element.change_account)
+        self.driver.find_element_by_id(element.change_account).click()
+         
+        '''登陆个性账号'''
+        commonAw.is_visible(self.driver, locator=element.regist_text)
+        self.driver.find_element_by_android_uiautomator(element.regist_text).click()
+        self.regist_account='shiyuyu2'
+        self.regist_password='123456'
+        self.driver.find_element_by_id(element.register_username).send_keys(self.regist_account)
+        self.driver.find_element_by_id(element.register_password).send_keys(self.regist_password)
+        self.driver.keyevent(4)
+        self.driver.find_element_by_id(element.register_confirm).click()
+        sleep(2)
+        self.checkResult()
+        
+    def checkResult(self):
+        cursor4=localConfigDB.executeSQL('SELECT count(*) FROM g_user;')
+        self.res4=localConfigDB.get_one(cursor4)
+        cursor5=localConfigDB.executeSQL('SELECT count(*) FROM g_game_account;')
+        self.res5=localConfigDB.get_one(cursor5)
+        cursor6=localConfigDB.executeSQL('SELECT count(*) FROM g_login_record;')
+        self.res6=localConfigDB.get_one(cursor6)
+        self.assertEqual(1,self.res4[0]-self.res1[0])
+        self.assertEqual(1,self.res5[0]-self.res2[0])
+        self.assertEqual(1,self.res6[0]-self.res3[0])
+        self.assertEqual('马上设置', self.driver.get_attribute(element.register_bind_rightnow))      
+        self.assertEqual('', self.driver.get_attribute(element.register_account_info))
+    def tearDown(self):
+        self.driver.quit()
+        localConfigDB.executeSQL('DELETE FROM g_user WHERE 1 ORDER BY id DESC LIMIT 1;DELETE FROM g_game_account WHERE 1 ORDER BY id DESC LIMIT 1;DELETE FROM g_login_record WHERE 1 ORDER BY id DESC LIMIT 1;')
+        localConfigDB.closeDB()

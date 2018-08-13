@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 13 resources" deleteContents="false" description="Delete 13 resources" element1="/ApiTest/result/20180429135432" element10="/ApiTest/result/20180429140241" element11="/ApiTest/result/20180429140306" element12="/ApiTest/result/20180429141219" element13="/ApiTest/result/20180429141317" element2="/ApiTest/result/20180429135449" element3="/ApiTest/result/20180429135504" element4="/ApiTest/result/20180429135517" element5="/ApiTest/result/20180429135656" element6="/ApiTest/result/20180429135732" element7="/ApiTest/result/20180429135808" element8="/ApiTest/result/20180429140039" element9="/ApiTest/result/20180429140232" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="13" stamp="1525404806787"/>
+</session>

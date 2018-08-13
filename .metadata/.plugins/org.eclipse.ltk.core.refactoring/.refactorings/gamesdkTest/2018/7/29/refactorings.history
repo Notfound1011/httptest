@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;gamesdkTest/config178.ini&apos; to &apos;config.ini&apos;" description="Rename resource &apos;config178.ini&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="config178.ini" name="config.ini" stamp="1532055643722" updateReferences="true"/>
+</session>

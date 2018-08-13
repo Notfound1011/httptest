@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pydev-testrun version="1.0"?><pydev-testsuite>
+<summary errors="1" failures="0" finished="true" name="Test Run: 28" tests="1" total_time="Finished in: 0.16 secs."/>
+<test location="F:\workspace\game2_httpTest\testCase\gamesdk\userlogin.py" status="error" test="UserLogin.testUserLogin" time="">
+<stdout><![CDATA[
+&#35831;&#27714;&#30340;url&#26159;&#65306;http://test.rr.tv:8098/user/login
+
+&#21709;&#24212;&#30340;body&#26159;&#65306;
+{
+    "error": "Not Found",
+    "message": "No message available",
+    "path": "/user/login",
+    "status": 404,
+    "timestamp": 1533634768261
+}
+]]></stdout>
+<stderr><![CDATA[Traceback (most recent call last):
+  File "F:\workspace\game2_httpTest\testCase\gamesdk\userlogin.py", line 71, in testUserLogin
+    self.checkResult()
+  File "F:\workspace\game2_httpTest\testCase\gamesdk\userlogin.py", line 84, in checkResult
+    self.assertEqual(self.info['errorno'], self.errorno)
+KeyError: 'errorno'
+
+======================================================================Traceback (most recent call last):
+  File "F:\workspace\game2_httpTest\testCase\gamesdk\userlogin.py", line 78, in tearDown
+    self.log.build_case_code(self.case_name, str(self.errorno), str(self.info['data']))
+KeyError: 'data'
+]]></stderr>
+</test>
+<launch mode="run">
+<launch_memento><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration local="true" path="game2_httpTest userlogin.py"/>
+]]></launch_memento>
+</launch>
+</pydev-testsuite>

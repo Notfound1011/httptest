@@ -1,0 +1,10 @@
+'''
+Created on 2018年8月7日
+
+@author: Admin
+'''
+class userinfo():
+    case_name = '用户登陆接口' 
+    method = 'post'
+    body='deviceId=867142037673250&password=e10adc3949ba59abbe56e057f20f883e&device_no=867142037673250&guid=ffffffff-ca19-ec69-0000-000000000000&channel_id=0&phone_mob=shiyuyu&game_id=1029&promote=0&'
+    headers = {'clientVersion': '4.0.0','Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'}

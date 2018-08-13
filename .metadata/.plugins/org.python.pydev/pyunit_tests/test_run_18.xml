@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pydev-testrun version="1.0"?><pydev-testsuite>
+<summary errors="0" failures="0" finished="true" name="Test Run: 35" tests="1" total_time="Finished in: 0.09 secs."/>
+<test location="F:\workspace\game2_httpTest\testCase\gamesdk\userlogin.py" status="ok" test="UserLogin.testUserLogin" time="0.09">
+<stdout><![CDATA[
+&#35831;&#27714;&#30340;url&#26159;&#65306;http://test.rr.tv:8082/user/login
+
+&#21709;&#24212;&#30340;body&#26159;&#65306;
+{
+    "data": {
+        "account": "shiyuyu",
+        "coins": null,
+        "face": null,
+        "has_discount": false,
+        "has_new_giftbox": false,
+        "has_new_msg": false,
+        "idNo": null,
+        "isRegister": false,
+        "name": null,
+        "needBindIdCardInfo": false,
+        "need_bind": false,
+        "new_user": false,
+        "nickname": "shiyuyu#4819263711",
+        "pay_coupon_count": null,
+        "pay_coupon_count_all": null,
+        "phone": "18601405271",
+        "promote_coin": null,
+        "register": false,
+        "sid": null,
+        "token": "02e37c41357c45a3a7bfa77de99287d0",
+        "uid": "70065536",
+        "user_point": null,
+        "vip_level": null
+    },
+    "errorno": 200,
+    "errortext": "",
+    "status": true
+}
+02e37c41357c45a3a7bfa77de99287d0
+Connect DB successfully!
+Database closed!
+]]></stdout>
+<stderr/>
+</test>
+<launch mode="run">
+<launch_memento><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration local="true" path="game2_httpTest userlogin.py"/>
+]]></launch_memento>
+</launch>
+</pydev-testsuite>

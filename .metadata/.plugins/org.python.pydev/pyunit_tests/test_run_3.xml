@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pydev-testrun version="1.0"?><pydev-testsuite>
+<summary errors="1" failures="0" finished="true" name="Test Run: 20" tests="1" total_time="Finished in: 0.00 secs."/>
+<test location="F:\workspace\game2_httpTest\testCase\gamesdk\userinfo.py" status="error" test="UserInfo.testUserInfo" time="">
+<stdout/>
+<stderr><![CDATA[Traceback (most recent call last):
+  File "F:\workspace\game2_httpTest\testCase\gamesdk\userinfo.py", line 56, in setUp
+    localConfigHttp.set_data(self.body)
+AttributeError: 'UserInfo' object has no attribute 'body'
+]]></stderr>
+</test>
+<launch mode="run">
+<launch_memento><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration local="true" path="game2_httpTest userinfo.py"/>
+]]></launch_memento>
+</launch>
+</pydev-testsuite>

@@ -1,0 +1,36 @@
+'''
+Created on 2018年6月25日
+
+@author: Admin
+'''
+from selenium import webdriver
+from time import sleep
+import readConfig as readConfig
+from symbol import except_clause
+# from selenium.webdriver.common.keys import Keys
+localReadConfig = readConfig.ReadConfig()
+browser = webdriver.Chrome()
+def env(envname):
+    try:
+        if envname == 'uat':
+            url=localReadConfig.get_env('uat')
+        if envname == 'test':
+            url=localReadConfig.get_env('test')
+    except ,e:
+#     else:
+#         print('not exist')
+    browser.get(url)
+    
+env('uat')
+def login(account,passwd):
+    browser.find_element_by_id('username').send_keys(account)
+    browser.find_element_by_id('password').send_keys(passwd)
+    browser.find_element_by_xpath('/html/body/div/div/form/button').click()
+login('shiyuyu','123456')
+# assert '' in browser.title
+
+sleep(10)
+# elem = browser.find_element_by_name('wd')  # Find the search box
+# elem.send_keys('shiyuyu' + Keys.RETURN)
+
+browser.quit()

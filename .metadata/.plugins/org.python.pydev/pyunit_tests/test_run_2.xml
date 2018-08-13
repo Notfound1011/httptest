@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pydev-testrun version="1.0"?><pydev-testsuite>
+<summary errors="1" failures="0" finished="true" name="Test Run: 87" tests="1" total_time="Finished in: 55.87 secs."/>
+<test location="F:\workspace\gamesdkTest\testCase\gamesdkclient\&amp;#20010;&amp;#24615;&amp;#36134;&amp;#21495;&amp;#27880;&amp;#20876;.py" status="error" test="Personalaccount_login.testLogin" time="">
+<stdout><![CDATA[Connect DB successfully!
+Database closed!
+]]></stdout>
+<stderr><![CDATA[Traceback (most recent call last):
+  File "F:\workspace\gamesdkTest\testCase\gamesdkclient\&#20010;&#24615;&#36134;&#21495;&#27880;&#20876;.py", line 66, in testLogin
+    print(self.driver.window_handles)
+  File "D:\Python\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 719, in window_handles
+    return self.execute(Command.GET_WINDOW_HANDLES)['value']
+  File "D:\Python\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 314, in execute
+    self.error_handler.check_response(response)
+  File "D:\Python\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "D:\Python\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "D:\Python\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Method has not yet been implemented
+
+]]></stderr>
+</test>
+<launch mode="run">
+<launch_memento><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration local="true" path="gamesdkTest 个性账号注册.py"/>
+]]></launch_memento>
+</launch>
+</pydev-testsuite>

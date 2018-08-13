@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pydev-testrun version="1.0"?><pydev-testsuite>
+<summary errors="0" failures="1" finished="true" name="Test Run: 29" tests="1" total_time="Finished in: 0.07 secs."/>
+<test location="F:\workspace\game2_httpTest\testCase\gamesdk\userlogin.py" status="fail" test="UserLogin.testUserLogin" time="">
+<stdout><![CDATA[
+&#35831;&#27714;&#30340;url&#26159;&#65306;http://test.rr.tv:8082/user/login
+
+&#21709;&#24212;&#30340;body&#26159;&#65306;
+{
+    "data": null,
+    "errorno": 1017,
+    "errortext": "&#23494;&#30721;&#38169;&#35823;",
+    "status": false
+}
+--- Logging error ---
+Traceback (most recent call last):
+  File "D:\Python\lib\logging\__init__.py", line 994, in emit
+    stream.write(msg)
+  File "D:\Python\lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 40-45: character maps to <undefined>
+Call stack:
+  File "F:\eclipse_neon64\dropins\plugins\org.python.pydev.core_6.3.2.201803171248\pysrc\runfiles.py", line 275, in <module>
+    main()
+  File "F:\eclipse_neon64\dropins\plugins\org.python.pydev.core_6.3.2.201803171248\pysrc\runfiles.py", line 97, in main
+    return pydev_runfiles.main(configuration)  # Note: still doesn't return a proper value.
+  File "F:\eclipse_neon64\dropins\plugins\org.python.pydev.core_6.3.2.201803171248\pysrc\_pydev_runfiles\pydev_runfiles.py", line 874, in main
+    PydevTestRunner(configuration).run_tests()
+  File "F:\eclipse_neon64\dropins\plugins\org.python.pydev.core_6.3.2.201803171248\pysrc\_pydev_runfiles\pydev_runfiles.py", line 803, in run_tests
+    run_tests()
+  File "F:\eclipse_neon64\dropins\plugins\org.python.pydev.core_6.3.2.201803171248\pysrc\_pydev_runfiles\pydev_runfiles.py", line 798, in run_tests
+    runner.run(test_suite)
+  File "D:\Python\lib\unittest\runner.py", line 176, in run
+    test(result)
+  File "D:\Python\lib\unittest\suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "D:\Python\lib\unittest\suite.py", line 122, in run
+    test(result)
+  File "D:\Python\lib\unittest\suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "D:\Python\lib\unittest\suite.py", line 122, in run
+    test(result)
+  File "D:\Python\lib\unittest\suite.py", line 84, in __call__
+    return self.run(*args, **kwds)
+  File "D:\Python\lib\unittest\suite.py", line 122, in run
+    test(result)
+  File "D:\Python\lib\unittest\case.py", line 653, in __call__
+    return self.run(*args, **kwds)
+  File "D:\Python\lib\unittest\case.py", line 608, in run
+    self.tearDown()
+  File "F:\workspace\game2_httpTest\testCase\gamesdk\userlogin.py", line 78, in tearDown
+    self.log.build_case_code(self.case_name, str(self.errorno), str(self.info['data']))
+  File "F:\workspace\game2_httpTest\common\Log.py", line 60, in build_case_code
+    self.logger.info(case_name+" - Code:"+code+" - msg:"+msg)
+Message: '&#29992;&#25143;&#30331;&#38470;&#25509;&#21475; - Code: - msg:None'
+Arguments: ()
+]]></stdout>
+<stderr><![CDATA[Traceback (most recent call last):
+  File "F:\workspace\game2_httpTest\testCase\gamesdk\userlogin.py", line 71, in testUserLogin
+    self.checkResult()
+  File "F:\workspace\game2_httpTest\testCase\gamesdk\userlogin.py", line 84, in checkResult
+    self.assertEqual(self.info['errorno'], self.errorno)
+AssertionError: 1017 != ''
+]]></stderr>
+</test>
+<launch mode="run">
+<launch_memento><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration local="true" path="game2_httpTest userlogin.py"/>
+]]></launch_memento>
+</launch>
+</pydev-testsuite>
