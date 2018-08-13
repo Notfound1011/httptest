@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<page>
+    <database name="test">
+        <table name="testtable1">
+            <sql id="select_member">
+                SELECT * FROM rs_member_wallet_bill WHERE member_id=%s
+            </sql>
+        </table>
+
+        <table name="testtable2">
+            <sql id="delete_user">
+                DELETE FROM rs_member WHERE email=%s
+            </sql>
+			<sql id="select_user">
+                SELECT * FROM rs_member WHERE email=%s
+            </sql>
+        </table>
+    </database>
+</page>

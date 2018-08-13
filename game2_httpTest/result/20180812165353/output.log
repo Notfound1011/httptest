@@ -1,0 +1,15 @@
+2018-08-12 16:53:53,571 - rrtv_testgroup - INFO - ********TEST START********
+2018-08-12 16:53:53,759 - rrtv_testgroup - INFO - ----------   LOG NO.1 ------------
+2018-08-12 16:53:53,759 - rrtv_testgroup - INFO - testLoginWithAccountNoPermission - StatusCode:200
+2018-08-12 16:53:53,759 - rrtv_testgroup - INFO - Response: {"msg":"您没有权限登录","code":"1002","data":{},"recordsTotal":0}
+2018-08-12 16:53:53,805 - rrtv_testgroup - INFO - ----------   LOG NO.2 ------------
+2018-08-12 16:53:53,805 - rrtv_testgroup - INFO - testLoginWithAccountNotExist - StatusCode:200
+2018-08-12 16:53:53,805 - rrtv_testgroup - INFO - Response: {"msg":"账号不存在","code":"1002","data":{},"recordsTotal":0}
+2018-08-12 16:53:53,837 - rrtv_testgroup - INFO - ----------   LOG NO.3 ------------
+2018-08-12 16:53:53,837 - rrtv_testgroup - INFO - testLoginWithRightPasswd - StatusCode:200
+2018-08-12 16:53:53,837 - rrtv_testgroup - INFO - Response: {"msg":"","code":"0000","data":{"id":16,"createTime":1533018369000,"updateTime":1533018369000,"createTimeStr":"07-31 14:26","type":"BUSINESS","loginName":"admin","nickName":"牛二","pwd":"","salt":"","realName":"张山","mobile":"18725874125","channelId":null,"gameChannel":null,"parentChannelId":null,"payAccount":"","token":"cc33b49789bd4a7795c79f03c6831200"},"recordsTotal":0}
+2018-08-12 16:53:53,885 - rrtv_testgroup - INFO - ----------   LOG NO.4 ------------
+2018-08-12 16:53:53,885 - rrtv_testgroup - INFO - testLoginWithWrongPasswd - StatusCode:200
+2018-08-12 16:53:53,885 - rrtv_testgroup - INFO - Response: {"msg":"密码错误","code":"1004","data":{},"recordsTotal":0}
+2018-08-12 16:53:53,885 - rrtv_testgroup - INFO - *********TEST END*********
+2018-08-12 16:53:53,885 - rrtv_testgroup - INFO - Doesn't send report email to developer.

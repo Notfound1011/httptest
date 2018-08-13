@@ -1,0 +1,6 @@
+#joker interface testcase
+#gamesdk/testUserLogin
+#gamesdk/testUserInfo
+#gotham interface testcase
+gotham/testBusUserlogin
+gotham/testcompanyList
