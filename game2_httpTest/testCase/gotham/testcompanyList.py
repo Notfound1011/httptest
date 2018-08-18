@@ -12,7 +12,7 @@ localReadConfig = readConfig.ReadConfig()
 localConfigHttp = configHttp.ConfigHttp()
 localConfigDB = configDB.MyDB()
 
-class BusUserlogin(unittest.TestCase):
+class CompanyList(unittest.TestCase):
     def __init__(self,*args,**kwargs):
         unittest.TestCase.__init__(self, *args, **kwargs)        
         '''初始化参数'''

@@ -62,6 +62,7 @@ def show_return_msg(response):
     url = response.url
     msg = response.text
     print("\n请求的url是： "+url)
+    
     print("\n响应的status_code是： "+str(response.status_code))
     # 
     print("\n响应的body是： "+'\n'+json.dumps(json.loads(msg), ensure_ascii=False, sort_keys=True, indent=4))

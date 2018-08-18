@@ -6,17 +6,17 @@ from common.Log import MyLog
 import readConfig as readConfig
 from common import configHttp as configHttp
 from common import configDB
-from apiparam.GothamApiParam import busUserlogin,common
+from apiparam.GothamApiParam import common, gameSaveUpdate
 
 localReadConfig = readConfig.ReadConfig()
 localConfigHttp = configHttp.ConfigHttp()
 localConfigDB = configDB.MyDB()
 
-class BusUserlogin(unittest.TestCase):
+class gameSaveUpdateUpdate(unittest.TestCase):
     def __init__(self,*args,**kwargs):
         unittest.TestCase.__init__(self, *args, **kwargs)        
         '''初始化参数'''
-        self.case_name=busUserlogin.case_name
+        self.case_name=gameSaveUpdate.case_name
         self.headers=common.headers
         self.token = ''
         self.result = ''
@@ -25,70 +25,71 @@ class BusUserlogin(unittest.TestCase):
         self.info = None
         
         '''接口预期返回的参数'''
-        #账号密码正确
+        #使用英文更新游戏
         self.status_code1 = 200
         self.errorcode1 = '0000'
         self.msg1=""
-        self.loginName="admin"
-        #输入不存在账号
+        self.name1=gameSaveUpdate.name1
+        self.deliveryUrl1=gameSaveUpdate.deliveryUrl1
+        #使用中文更新游戏
         self.status_code2 = 200
-        self.errorcode2 = '1002'
-        self.msg2="账号不存在"
-        #输入存在的但是没有权限的账号
+        self.errorcode2 = '0000'
+        self.msg2=""
+        self.name2=gameSaveUpdate.name2
+        self.deliveryUrl2=gameSaveUpdate.deliveryUrl2
+        #使用空值更新游戏
         self.status_code3 = 200
-        self.errorcode3 = '1002' 
-        self.msg3="您没有权限登录"
-        #输入错误密码
-        self.status_code4 = 200
-        self.errorcode4 = '1004'
-        self.msg4="密码错误"
-
+        self.errorcode3 = '0000'
+        self.msg3=""
+        self.name3=gameSaveUpdate.name3
+        self.deliveryUrl3=gameSaveUpdate.deliveryUrl3
     def setUp(self):
         """
         :return:
         """
         self.log = MyLog.get_log()
         self.logger = self.log.get_logger()
+        '''登陆获取token'''
         # set url
-        self.url = commonAw.get_url_from_xml('busUserlogin')
+        self.url = commonAw.get_url_from_xml('gamesave')
         localConfigHttp.set_url(self.url)
-        
         # set header
         localConfigHttp.set_headers(self.headers)
         
-    def testLoginWithRightPasswd(self):
+        
+    def testgameSaveUpdateUpdateUseEn(self):
         """
         the 1st testcase
-        账号存在，密码正确--->登陆
+        使用英文--> 更新游戏
         :return:
         """
-        # set body 
-        self.body=busUserlogin.body1
+        # set body
+        self.body=gameSaveUpdate.body1
         localConfigHttp.set_data(self.body)
         # post http
         self.response = localConfigHttp.post()
-
+        
         # check result of response
         self.info = self.response.json()
 #         commonAw.show_return_msg(self.response)
         self.assertEqual(self.response.status_code, self.status_code1)
         self.assertEqual(self.info['code'], self.errorcode1)
         self.assertEqual(self.info['msg'], self.msg1)
-        self.assertEqual(self.info['data']['loginName'], self.loginName)
-        localReadConfig.set_headers('token', self.info['data']['token'])
+        self.assertEqual(self.info['data']['name'], self.name1)
+        self.assertEqual(self.info['data']['deliveryUrl'], self.deliveryUrl1)
         #write_log
-        self.log.build_case_body(sys._getframe().f_code.co_name,self.body)
+        self.log.build_case_body(sys._getframe().f_code.co_name, self.body)
         self.log.build_case_code(str(self.status_code1))
         self.log.build_case_response(self.response.text)
         
-    def testLoginWithAccountNotExist(self):
+    def testgameSaveUpdateUpdateUseCn(self):
         """
-        the 2rd testcase
-        账号不存在--->登陆
+        the 1st testcase
+               使用中文 --> 更新游戏
         :return:
         """
         # set body 
-        self.body=busUserlogin.body2
+        self.body=gameSaveUpdate.body2
         localConfigHttp.set_data(self.body)
         # post http
         self.response = localConfigHttp.post()
@@ -99,24 +100,24 @@ class BusUserlogin(unittest.TestCase):
         self.assertEqual(self.response.status_code, self.status_code2)
         self.assertEqual(self.info['code'], self.errorcode2)
         self.assertEqual(self.info['msg'], self.msg2)
-        
+        self.assertEqual(self.info['data']['name'], self.name2)
+        self.assertEqual(self.info['data']['deliveryUrl'], self.deliveryUrl2)
         #write_log
-        self.log.build_case_body(sys._getframe().f_code.co_name,self.body)
+        self.log.build_case_body(sys._getframe().f_code.co_name, self.body)
         self.log.build_case_code(str(self.status_code2))
         self.log.build_case_response(self.response.text)
-        
-    def testLoginWithAccountNoPermission(self):
+
+    def testgameSaveUpdateUpdateUseNull(self):
         """
-        the 3rd testcase
-        账号存在但没有权限--->登陆
+        the 1st testcase
+               使用空值--> 更新游戏
         :return:
         """
         # set body 
-        self.body=busUserlogin.body3
+        self.body=gameSaveUpdate.body3
         localConfigHttp.set_data(self.body)
         # post http
         self.response = localConfigHttp.post()
-        self.info = self.response.json()
 
         # check result of response
         self.info = self.response.json()
@@ -124,32 +125,11 @@ class BusUserlogin(unittest.TestCase):
         self.assertEqual(self.response.status_code, self.status_code3)
         self.assertEqual(self.info['code'], self.errorcode3)
         self.assertEqual(self.info['msg'], self.msg3)
-        
+        self.assertEqual(self.info['data']['name'], self.name3)
+        self.assertEqual(self.info['data']['deliveryUrl'], self.deliveryUrl3)
         #write_log
         self.log.build_case_body(sys._getframe().f_code.co_name,self.body)
         self.log.build_case_code(str(self.status_code3))
-        self.log.build_case_response(self.response.text)
-        
-    def testLoginWithWrongPasswd(self):
-        """
-        the 4th testcase
-        账号存在，密码错误--->登陆
-        :return:
-        """
-        # set body 
-        self.body=busUserlogin.body4
-        localConfigHttp.set_data(self.body)
-        # post http
-        self.response = localConfigHttp.post()
-        self.info = self.response.json()
-        # check result of response
-#         commonAw.show_return_msg(self.response)
-        self.assertEqual(self.response.status_code, self.status_code4)
-        self.assertEqual(self.info['code'], self.errorcode4)
-        self.assertEqual(self.info['msg'], self.msg4)
-        #write_log
-        self.log.build_case_body(sys._getframe().f_code.co_name,self.body)
-        self.log.build_case_code(str(self.status_code4))
         self.log.build_case_response(self.response.text)
 
     def tearDown(self):
@@ -157,3 +137,7 @@ class BusUserlogin(unittest.TestCase):
 
         :return:
         """
+        # set body 
+        localConfigHttp.set_data(gameSaveUpdate.body)
+        # post http
+        self.response = localConfigHttp.post()

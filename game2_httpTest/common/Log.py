@@ -47,27 +47,39 @@ class Log:
         :return:
         """
         self.logger.info("--------" + case_no + " END--------")
-
-    def build_case_code(self, case_name, code):
+        
+    def build_case_body(self,case_name, body):
         """
         write test case line
         :param case_name:
-        :param code:
+        :param body:
         :return:
         """
         global s #引用全局变量
         s = s+1
         self.logger.info('----------   LOG NO.%s ------------'%s)
-        self.logger.info(case_name+" - StatusCode:"+code)
+        self.logger.info("Casename: "+case_name+'\n'+"    Body: "+body)
+        print("Casename: "+case_name+'\n'+"    Body: "+body)
         return s
+    
+    def build_case_code(self, code):
+        """
+        write test case line
+        :param code:
+        :return:
+        """
+        self.logger.info("    StatusCode:"+code)
+        print("    StatusCode: "+code)
+        
     def build_case_response(self, result):
         """
         write test case line
         :param result:
         :return:
         """
-        self.logger.info("Response: "+result)
-
+        self.logger.info("    Response: "+result)
+        print("    Response: "+result)
+        
     def get_report_path(self):
         """
         get report file path

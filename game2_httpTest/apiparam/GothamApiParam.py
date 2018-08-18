@@ -6,6 +6,7 @@ Created on 2018年8月7日
 '''
 gotham api param
 '''
+from urllib import parse
 import readConfig
 localReadConfig = readConfig.ReadConfig()
 
@@ -28,10 +29,71 @@ class busUserlogin():
     body4='loginName=admin&pwd=202cb962ac59075b964b07152d234b70&type=BUSINESS'
 class companyList():
     '''
-    主渠道后台登陆接口
+    查询公司列表接口
     '''
     case_name = 'companyList_interface'
     '''携带token'''
     body1='keyword=&page=1&rows=15&token=%s'%token
     '''不携带token'''
     body2='keyword=&page=1&rows=15&token='
+    
+class gameList():
+    '''
+    查询游戏列表接口
+    '''
+    case_name = 'gameList_interface'
+    '''携带token，查询所有'''
+    body1='keyword=&page=1&rows=15&token=%s'%token
+    '''不携带token'''
+    body2='keyword=&page=1&rows=15&token='
+    '''查询单个游戏'''
+    keyword='西游诀'
+    keyword_quote=parse.quote(keyword)
+    body3='keyword=%s&page=1&rows=15&token=%s'%(keyword_quote,token)
+
+class gameSaveUpdate():
+    '''
+    新增/更新游戏的接口
+    '''
+    case_name = 'gameSave_interface'
+    name='西游诀'
+    name_quote=parse.quote(name)
+    body='companyId=1&deliveryUrl=http://sync.1sdk.cn/cb/renrenshipin/BED427096E2870F0/sync.html&id=1001&name=%s&secretKey=123456&token=%s'%(name_quote,token)
+    '''更新游戏---测试英文'''
+    name1='testupdateEn'
+    deliveryUrl1='testupdate'
+    body1='companyId=1&deliveryUrl=%s&id=1001&name=%s&secretKey=123456&token=%s'%(deliveryUrl1,name1,token)
+    '''更新游戏---测试中文'''
+    name2='测试中文'
+    deliveryUrl2='测试中文'
+    name_quote2=parse.quote(name2)
+    deliveryUrl_quote2=parse.quote(deliveryUrl2)
+    body2='companyId=1&deliveryUrl=%s&id=1001&name=%s&secretKey=123456&token=%s'%(deliveryUrl_quote2,name_quote2,token)
+    '''更新游戏---测试空值'''
+    name3=''
+    deliveryUrl3=''
+    body3='companyId=1&deliveryUrl=%s&id=1001&name=%s&secretKey=123456&token=%s'%(deliveryUrl3,name3,token)
+
+class gameSaveCreate():
+    '''
+    新增/更新游戏的接口
+    '''
+    case_name = 'gameSave_interface'
+    '''新增游戏---测试英文'''
+    name1='testupdateEn'
+    deliveryUrl1='testupdate'
+    body1='companyId=1&deliveryUrl=%s&id=1001&name=%s&secretKey=123456&token=%s'%(deliveryUrl1,name1,token)
+    '''新增游戏---测试中文'''
+    name2='测试中文'
+    deliveryUrl2='测试中文'
+    name_quote2=parse.quote(name2)
+    deliveryUrl_quote2=parse.quote(deliveryUrl2)
+    body2='companyId=1&deliveryUrl=%s&id=1001&name=%s&secretKey=123456&token=%s'%(deliveryUrl_quote2,name_quote2,token)
+    '''新增游戏---测试空值'''
+    name3=''
+    deliveryUrl3=''
+    body3='companyId=1&deliveryUrl=%s&id=1001&name=%s&secretKey=123456&token=%s'%(deliveryUrl3,name3,token)
+
+if __name__=='__main__':
+    print()
+    
