@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Test Report</title>
+    <meta name="generator" content="HTMLTestRunner 0.8.2.2"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    
+<style type="text/css" media="screen">
+body        { font-family: Microsoft YaHei,Tahoma,arial,helvetica,sans-serif;padding: 20px; font-size: 80%; }
+table       { font-size: 100%; }
+
+/* -- heading ---------------------------------------------------------------------- */
+.heading {
+    margin-top: 0ex;
+    margin-bottom: 1ex;
+}
+
+.heading .description {
+    margin-top: 4ex;
+    margin-bottom: 6ex;
+}
+
+/* -- report ------------------------------------------------------------------------ */
+#total_row  { font-weight: bold; }
+.passCase   { color: #5cb85c; }
+.failCase   { color: #d9534f; font-weight: bold; }
+.errorCase  { color: #f0ad4e; font-weight: bold; }
+.hiddenRow  { display: none; }
+.testcase   { margin-left: 2em; }
+</style>
+
+</head>
+<body >
+<script language="javascript" type="text/javascript">
+output_list = Array();
+
+/*level 调整增加只显示通过用例的分类 --Findyou
+0:Summary //all hiddenRow
+1:Failed  //pt hiddenRow, ft none
+2:Pass    //pt none, ft hiddenRow
+3:All     //pt none, ft none
+*/
+function showCase(level) {
+    trs = document.getElementsByTagName("tr");
+    for (var i = 0; i < trs.length; i++) {
+        tr = trs[i];
+        id = tr.id;
+        if (id.substr(0,2) == 'ft') {
+            if (level == 2 || level == 0 ) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+        if (id.substr(0,2) == 'pt') {
+            if (level < 2) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }
+    }
+
+    //加入【详细】切换文字变化 --Findyou
+    detail_class=document.getElementsByClassName('detail');
+	//console.log(detail_class.length)
+	if (level == 3) {
+		for (var i = 0; i < detail_class.length; i++){
+			detail_class[i].innerHTML="收起"
+		}
+	}
+	else{
+			for (var i = 0; i < detail_class.length; i++){
+			detail_class[i].innerHTML="详细"
+		}
+	}
+}
+
+function showClassDetail(cid, count) {
+    var id_list = Array(count);
+    var toHide = 1;
+    for (var i = 0; i < count; i++) {
+        //ID修改 点 为 下划线 -Findyou
+        tid0 = 't' + cid.substr(1) + '_' + (i+1);
+        tid = 'f' + tid0;
+        tr = document.getElementById(tid);
+        if (!tr) {
+            tid = 'p' + tid0;
+            tr = document.getElementById(tid);
+        }
+        id_list[i] = tid;
+        if (tr.className) {
+            toHide = 0;
+        }
+    }
+    for (var i = 0; i < count; i++) {
+        tid = id_list[i];
+        //修改点击无法收起的BUG，加入【详细】切换文字变化 --Findyou
+        if (toHide) {
+            document.getElementById(tid).className = 'hiddenRow';
+            document.getElementById(cid).innerText = "详细"
+        }
+        else {
+            document.getElementById(tid).className = '';
+            document.getElementById(cid).innerText = "收起"
+        }
+    }
+}
+
+function html_escape(s) {
+    s = s.replace(/&/g,'&amp;');
+    s = s.replace(/</g,'&lt;');
+    s = s.replace(/>/g,'&gt;');
+    return s;
+}
+</script>
+<div class='heading'>
+<h1 style="font-family: Microsoft YaHei">Test Report</h1>
+<p class='attribute'><strong>测试人员 : </strong> 人人视频测试组</p>
+<p class='attribute'><strong>开始时间 : </strong> 2018-08-20 10:28:05</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:00.593061</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 10，通过 10，通过率= 100.00%</p>
+
+<p class='description'>RRTV Project_Game Interface Test</p>
+</div>
+
+
+
+<p id='show_detail_line'>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 100.00% }</a>
+<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 0 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 10 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 10 }</a>
+</p>
+<table id='result_table' class="table table-condensed table-bordered table-hover">
+<colgroup>
+<col align='left' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+<col align='right' />
+</colgroup>
+<tr id='header_row' class="text-center success" style="font-weight: bold;font-size: 14px;">
+    <td>用例集/测试用例</td>
+    <td>总计</td>
+    <td>通过</td>
+    <td>失败</td>
+    <td>错误</td>
+    <td>详细</td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>gotham.testBusUserlogin.BusUserlogin</td>
+    <td class="text-center">4</td>
+    <td class="text-center">4</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c1',4)" class="detail" id='c1'>详细</a></td>
+</tr>
+
+<tr id='pt1_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>testLoginWithAccountNoPermission</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_1'>通过</button>
+    <div id='div_pt1_1' class="collapse in">
+    <pre>
+    
+pt1_1: Casename: testLoginWithAccountNoPermission
+    Body: loginName=test&amp;pwd=202cb962ac59075b964b07152d234b70&amp;type=BUSINESS
+    StatusCode: 200
+    Response: {"msg":"您没有权限登录","code":"1002","data":{},"recordsTotal":0}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt1_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>testLoginWithAccountNotExist</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_2'>通过</button>
+    <div id='div_pt1_2' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_2'>通过</button>
+    <div id='div_pt1_2' class="collapse in">
+    <pre>
+    
+pt1_2: Casename: testLoginWithAccountNotExist
+    Body: loginName=AccountNotExist&amp;pwd=e10adc3949ba59abbe56e057f20f883e&amp;type=BUSINESS
+    StatusCode: 200
+    Response: {"msg":"账号不存在","code":"1002","data":{},"recordsTotal":0}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt1_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>testLoginWithRightPasswd</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_3'>通过</button>
+    <div id='div_pt1_3' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_3'>通过</button>
+    <div id='div_pt1_3' class="collapse in">
+    <pre>
+    
+pt1_3: Casename: testLoginWithRightPasswd
+    Body: loginName=admin&amp;pwd=e10adc3949ba59abbe56e057f20f883e&amp;type=BUSINESS
+    StatusCode: 200
+    Response: {"msg":"","code":"0000","data":{"id":16,"createTime":1533018369000,"updateTime":1533018369000,"createTimeStr":"07-31 14:26","type":"BUSINESS","loginName":"admin","nickName":"牛二","pwd":"","salt":"","realName":"张山","mobile":"18725874125","channelId":null,"gameChannel":null,"parentChannelId":null,"payAccount":"","token":"4d496f8ba082428e9db408fa7e5ab20c"},"recordsTotal":0}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt1_4' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>testLoginWithWrongPasswd</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt1_4' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt1_4'>通过</button>
+    <div id='div_pt1_4' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt1_4' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt1_4'>通过</button>
+    <div id='div_pt1_4' class="collapse in">
+    <pre>
+    
+pt1_4: Casename: testLoginWithWrongPasswd
+    Body: loginName=admin&amp;pwd=202cb962ac59075b964b07152d234b70&amp;type=BUSINESS
+    StatusCode: 200
+    Response: {"msg":"密码错误","code":"1004","data":{},"recordsTotal":0}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>gotham.testGameList.GameList</td>
+    <td class="text-center">3</td>
+    <td class="text-center">3</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c2',3)" class="detail" id='c2'>详细</a></td>
+</tr>
+
+<tr id='pt2_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>testGameListWithToken</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_1'>通过</button>
+    <div id='div_pt2_1' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_1'>通过</button>
+    <div id='div_pt2_1' class="collapse in">
+    <pre>
+    
+pt2_1: Casename: testGameListWithToken
+    Body: keyword=&amp;page=1&amp;rows=15&amp;token=2bdcd5fbf9d54c8888c4a5d371757e43
+    StatusCode: 200
+    Response: {"msg":"","code":"0000","data":[{"id":1052,"createTime":1534485523000,"updateTime":1534485523000,"createTimeStr":"08-17 13:58","channelId":null,"name":"彭于晏","companyId":41,"companyName":"A座16楼1604室","deliveryUrl":null,"secretKey":null},{"id":1051,"createTime":1534484238000,"updateTime":1534484238000,"createTimeStr":"08-17 13:37","channelId":null,"name":"石乐志","companyId":41,"companyName":"A座16楼1604室","deliveryUrl":null,"secretKey":null},{"id":1050,"createTime":1533541148000,"updateTime":1533541148000,"createTimeStr":"08-06 15:39","channelId":null,"name":"泰斯特08","companyId":39,"companyName":"人人测试","deliveryUrl":null,"secretKey":null},{"id":1049,"createTime":1533530916000,"updateTime":1533531102000,"createTimeStr":"08-06 12:48","channelId":null,"name":"特斯特07","companyId":39,"companyName":"人人测试","deliveryUrl":"","secretKey":""},{"id":1048,"createTime":1533284511000,"updateTime":1533284511000,"createTimeStr":"08-03 16:21","channelId":null,"name":"特斯特06","companyId":39,"companyName":"人人测试","deliveryUrl":"","secretKey":""},{"id":1047,"createTime":1533181399000,"updateTime":1533181399000,"createTimeStr":"08-02 11:43","channelId":null,"name":"特斯特05","companyId":39,"companyName":"人人测试","deliveryUrl":"","secretKey":""},{"id":1046,"createTime":1533088429000,"updateTime":1533088429000,"createTimeStr":"08-01 09:53","channelId":null,"name":"特斯特04","companyId":38,"companyName":"海南畅娱","deliveryUrl":"21312","secretKey":"312321"},{"id":1045,"createTime":1533039544000,"updateTime":1533039544000,"createTimeStr":"07-31 20:19","channelId":null,"name":"特斯特03","companyId":37,"companyName":"4399手游","deliveryUrl":null,"secretKey":null},{"id":1044,"createTime":1533038204000,"updateTime":1533038204000,"createTimeStr":"07-31 19:56","channelId":null,"name":"小龙人","companyId":36,"companyName":"37手游","deliveryUrl":null,"secretKey":null},{"id":1043,"createTime":1533031878000,"updateTime":1533031878000,"createTimeStr":"07-31 18:11","channelId":null,"name":"特斯特02","companyId":38,"companyName":"海南畅娱","deliveryUrl":null,"secretKey":null},{"id":1042,"createTime":1533031847000,"updateTime":1533031847000,"createTimeStr":"07-31 18:10","channelId":null,"name":"泰斯特01","companyId":38,"companyName":"海南畅娱","deliveryUrl":null,"secretKey":null},{"id":1041,"createTime":1532411923000,"updateTime":1532413150000,"createTimeStr":"07-24 13:58","channelId":null,"name":"大爆炸","companyId":38,"companyName":"海南畅娱","deliveryUrl":"http://sync.1sdk.cn/cb/renrenshipin/F87A6C852040F873/sync.html","secretKey":"ztckbg39zbwtivxhluy672e149lcc1lo"},{"id":1040,"createTime":1533022417000,"updateTime":1533022417000,"createTimeStr":"07-31 15:33","channelId":null,"name":"大天使","companyId":38,"companyName":"海南畅娱","deliveryUrl":"","secretKey":""},{"id":1038,"createTime":1530083905000,"updateTime":1530083905000,"createTimeStr":"06-27 15:18","channelId":null,"name":"大天使之剑","companyId":36,"companyName":"37手游","deliveryUrl":"","secretKey":"4xkqwdw9bvxgm0vgdtimwy0ci2l0rr1u"},{"id":1037,"createTime":1529554189000,"updateTime":1529554189000,"createTimeStr":"06-21 12:09","channelId":null,"name":"仙灵觉醒","companyId":36,"companyName":"37手游","deliveryUrl":"","secretKey":"vb9hwxfwa0f837yu3q63d7ebnqtkkhvg"}],"recordsTotal":36}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt2_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>testGameListWithoutToken</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_2'>通过</button>
+    <div id='div_pt2_2' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_2'>通过</button>
+    <div id='div_pt2_2' class="collapse in">
+    <pre>
+    
+pt2_2: Casename: testGameListWithoutToken
+    Body: keyword=&amp;page=1&amp;rows=15&amp;token=
+    StatusCode: 500
+    Response: {"timestamp":1534732085921,"status":500,"error":"Internal Server Error","exception":"com.rrtv.game.exception.GameBaseException","message":"token为空","path":"/game/list"}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt2_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>testSearchGameListByOne</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt2_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt2_3'>通过</button>
+    <div id='div_pt2_3' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt2_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt2_3'>通过</button>
+    <div id='div_pt2_3' class="collapse in">
+    <pre>
+    
+pt2_3: Casename: testSearchGameListByOne
+    Body: keyword=%E8%A5%BF%E6%B8%B8%E8%AF%80&amp;page=1&amp;rows=15&amp;token=2bdcd5fbf9d54c8888c4a5d371757e43
+    StatusCode: 200
+    Response: {"msg":"","code":"0000","data":[{"id":1001,"createTime":1512700864000,"updateTime":1515482088000,"createTimeStr":"12-08 10:41","channelId":10001,"name":"西游诀","companyId":1,"companyName":"才宝","deliveryUrl":"http://sync.1sdk.cn/cb/renrenshipin/BED427096E2870F0/sync.html","secretKey":"123456"}],"recordsTotal":1}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr class='passClass warning'>
+    <td>gotham.testGameSaveUpdate.gameSaveUpdateUpdate</td>
+    <td class="text-center">3</td>
+    <td class="text-center">3</td>
+    <td class="text-center">0</td>
+    <td class="text-center">0</td>
+    <td class="text-center"><a href="javascript:showClassDetail('c3',3)" class="detail" id='c3'>详细</a></td>
+</tr>
+
+<tr id='pt3_1' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>testgameSaveUpdateUpdateUseCn</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_1' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_1'>通过</button>
+    <div id='div_pt3_1' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_1' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_1'>通过</button>
+    <div id='div_pt3_1' class="collapse in">
+    <pre>
+    
+pt3_1: Casename: testgameSaveUpdateUpdateUseCn
+    Body: companyId=1&amp;deliveryUrl=%E6%B5%8B%E8%AF%95%E4%B8%AD%E6%96%87&amp;id=1001&amp;name=%E6%B5%8B%E8%AF%95%E4%B8%AD%E6%96%87&amp;secretKey=123456&amp;token=2bdcd5fbf9d54c8888c4a5d371757e43
+    StatusCode: 200
+    Response: {"msg":"","code":"0000","data":{"id":1001,"createTime":1512700864000,"updateTime":1515482088000,"createTimeStr":"12-08 10:41","channelId":10001,"name":"测试中文","companyId":1,"companyName":"才宝","deliveryUrl":"测试中文","secretKey":"123456"},"recordsTotal":0}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt3_2' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>testgameSaveUpdateUpdateUseEn</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_2' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_2'>通过</button>
+    <div id='div_pt3_2' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_2' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_2'>通过</button>
+    <div id='div_pt3_2' class="collapse in">
+    <pre>
+    
+pt3_2: Casename: testgameSaveUpdateUpdateUseEn
+    Body: companyId=1&amp;deliveryUrl=testupdate&amp;id=1001&amp;name=testupdateEn&amp;secretKey=123456&amp;token=2bdcd5fbf9d54c8888c4a5d371757e43
+    StatusCode: 200
+    Response: {"msg":"","code":"0000","data":{"id":1001,"createTime":1512700864000,"updateTime":1515482088000,"createTimeStr":"12-08 10:41","channelId":10001,"name":"testupdateEn","companyId":1,"companyName":"才宝","deliveryUrl":"testupdate","secretKey":"123456"},"recordsTotal":0}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='pt3_3' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>testgameSaveUpdateUpdateUseNull</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou
+    <button id='btn_pt3_3' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_pt3_3'>通过</button>
+    <div id='div_pt3_3' class="collapse">  -->
+
+    <!-- 默认展开错误信息 -Findyou -->
+    <button id='btn_pt3_3' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_pt3_3'>通过</button>
+    <div id='div_pt3_3' class="collapse in">
+    <pre>
+    
+pt3_3: Casename: testgameSaveUpdateUpdateUseNull
+    Body: companyId=1&amp;deliveryUrl=&amp;id=1001&amp;name=&amp;secretKey=123456&amp;token=2bdcd5fbf9d54c8888c4a5d371757e43
+    StatusCode: 200
+    Response: {"msg":"","code":"0000","data":{"id":1001,"createTime":1512700864000,"updateTime":1515482088000,"createTimeStr":"12-08 10:41","channelId":10001,"name":"","companyId":1,"companyName":"才宝","deliveryUrl":"","secretKey":"123456"},"recordsTotal":0}
+
+
+    </pre>
+    </div>
+    </td>
+</tr>
+
+<tr id='total_row' class="text-center active">
+    <td>总计</td>
+    <td>10</td>
+    <td>10</td>
+    <td>0</td>
+    <td>0</td>
+    <td>通过率：100.00%</td>
+</tr>
+</table>
+
+<div id='ending'>&nbsp;</div>
+    <div style=" position:fixed;right:50px; bottom:30px; width:20px; height:20px;cursor:pointer">
+    <a href="#"><span class="glyphicon glyphicon-eject" style = "font-size:30px;" aria-hidden="true">
+    </span></a></div>
+    
+
+</body>
+</html>

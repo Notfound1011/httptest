@@ -58,8 +58,8 @@ class Log:
         global s #引用全局变量
         s = s+1
         self.logger.info('----------   LOG NO.%s ------------'%s)
-        self.logger.info("Casename: "+case_name+'\n'+"    Body: "+body)
-        print("Casename: "+case_name+'\n'+"    Body: "+body)
+        self.logger.info("Casename: "+case_name+"Body: "+body)
+        print("Casename: "+case_name+'\n'+"Body: "+body)
         return s
     
     def build_case_code(self, code):
@@ -68,8 +68,8 @@ class Log:
         :param code:
         :return:
         """
-        self.logger.info("    StatusCode:"+code)
-        print("    StatusCode: "+code)
+        self.logger.info("StatusCode:"+code)
+        print("StatusCode: "+code)
         
     def build_case_response(self, result):
         """
@@ -77,8 +77,8 @@ class Log:
         :param result:
         :return:
         """
-        self.logger.info("    Response: "+result)
-        print("    Response: "+result)
+        self.logger.info("Response: "+result)
+        print("Response: "+result)
         
     def get_report_path(self):
         """

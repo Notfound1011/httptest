@@ -19,7 +19,10 @@ testCase.gamesdk.testUserLogin|F:\github_code\httptest\game2_httpTest\testCase\g
 testCase.gamesdkclient.demo|F:\github_code\httptest\game2_httpTest\testCase\gamesdkclient\demo.py
 testCase.gotham.__init__|F:\github_code\httptest\game2_httpTest\testCase\gotham\__init__.py
 testCase.gotham.testBusUserlogin|F:\github_code\httptest\game2_httpTest\testCase\gotham\testBusUserlogin.py
-testCase.gotham.testcompanyList|F:\github_code\httptest\game2_httpTest\testCase\gotham\testcompanyList.py
+testCase.gotham.testCompanyList|F:\github_code\httptest\game2_httpTest\testCase\gotham\testCompanyList.py
+testCase.gotham.testGameList|F:\github_code\httptest\game2_httpTest\testCase\gotham\testGameList.py
+testCase.gotham.testGameSaveCreate|F:\github_code\httptest\game2_httpTest\testCase\gotham\testGameSaveCreate.py
+testCase.gotham.testGameSaveUpdate|F:\github_code\httptest\game2_httpTest\testCase\gotham\testGameSaveUpdate.py
 testCase.user.testAccountSetting|F:\github_code\httptest\game2_httpTest\testCase\user\testAccountSetting.py
 testCase.user.testAddAddress|F:\github_code\httptest\game2_httpTest\testCase\user\testAddAddress.py
 testCase.user.testDeleteAddress|F:\github_code\httptest\game2_httpTest\testCase\user\testDeleteAddress.py

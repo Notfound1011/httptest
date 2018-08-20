@@ -3,6 +3,6 @@
 #gamesdk/testUserInfo
 #gotham interface testcase
 gotham/testBusUserlogin
-#gotham/testCompanyList
+gotham/testCompanyList
 gotham/testGameList
 gotham/testGameSaveUpdate

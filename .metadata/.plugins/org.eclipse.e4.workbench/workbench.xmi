@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ASCII"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_MkQ1EJpCEeirZu-2NFb9Jw" elementId="org.eclipse.e4.legacy.ide.application" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_MkQ1EZpCEeirZu-2NFb9Jw" bindingContexts="_MkSqTJpCEeirZu-2NFb9Jw">
-  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.jdt.ui.ClassFileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.ClassFileEditorNoSource&quot; name=&quot;Log.class&quot; tooltip=&quot;sun.rmi.runtime.Log&quot;>&#xD;&#xA;&lt;persistable org.eclipse.jdt.ui.ClassFileIdentifier=&quot;=encrypt/C:\/Program Files\/Java\/jre1.8.0_151\/lib\/rt.jar&amp;lt;sun.rmi.runtime(Log.class&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;BaseHttpTask.java&quot; tooltip=&quot;encrypt/src/com/zhongduomei/rrmj/society/encrypt/BaseHttpTask.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/encrypt/src/com/zhongduomei/rrmj/society/encrypt/BaseHttpTask.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;AES.java&quot; tooltip=&quot;encrypt/src/encrypt/AES.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/encrypt/src/encrypt/AES.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.m2e.editor.MavenPomEditor&quot; name=&quot;pom.xml&quot; tooltip=&quot;mavenDemo-0.0.1-SNAPSHOT/pom.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/mavenDemo-0.0.1-SNAPSHOT/pom.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.jdt.ui.ClassFileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.ClassFileEditorNoSource&quot; name=&quot;AdaptiveCoding.class&quot; tooltip=&quot;com.sun.java.util.jar.pack.AdaptiveCoding&quot;>&#xD;&#xA;&lt;persistable org.eclipse.jdt.ui.ClassFileIdentifier=&quot;= /C:\/Program Files\/Java\/jre1.8.0_151\/lib\/rt.jar&amp;lt;com.sun.java.util.jar.pack(AdaptiveCoding.class&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.jdt.ui.ClassFileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.ClassFileEditorNoSource&quot; name=&quot;String.class&quot; tooltip=&quot;java.lang.String&quot;>&#xD;&#xA;&lt;persistable org.eclipse.jdt.ui.ClassFileIdentifier=&quot;= /C:\/Program Files\/Java\/jre1.8.0_151\/lib\/rt.jar&amp;lt;java.lang(String.class&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.jdt.ui.ClassFileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.ClassFileEditorNoSource&quot; name=&quot;Map.class&quot; tooltip=&quot;java.util.Map&quot;>&#xD;&#xA;&lt;persistable org.eclipse.jdt.ui.ClassFileIdentifier=&quot;= /C:\/Program Files\/Java\/jre1.8.0_151\/lib\/rt.jar&amp;lt;java.util(Map.class&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;ApiParam.py&quot; tooltip=&quot;game2_httpTest/common/ApiParam.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/game2_httpTest/common/ApiParam.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;com.android.ide.eclipse.editors.CommonXmlEditor&quot; name=&quot;interfaceURL.xml&quot; tooltip=&quot;game2_httpTest/testFile/interfaceURL.xml&quot;>&#xD;&#xA;&lt;persistable path=&quot;/game2_httpTest/testFile/interfaceURL.xml&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.jdt.ui.ClassFileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.ClassFileEditorNoSource&quot; name=&quot;System.class&quot; tooltip=&quot;java.lang.System&quot;>&#xD;&#xA;&lt;persistable org.eclipse.jdt.ui.ClassFileIdentifier=&quot;= /C:\/Program Files\/Java\/jre1.8.0_151\/lib\/rt.jar&amp;lt;java.lang(System.class&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;BaseHttpTask.java&quot; tooltip=&quot;G:\QQ\920525654\FileRecv\BaseHttpTask.java&quot;>&#xD;&#xA;&lt;persistable uri=&quot;file:/G:/QQ/920525654/FileRecv/BaseHttpTask.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.ide.FileStoreEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;AES.java&quot; tooltip=&quot;G:\QQ\920525654\FileRecv\AES.java&quot;>&#xD;&#xA;&lt;persistable uri=&quot;file:/G:/QQ/920525654/FileRecv/AES.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;userlogin.py&quot; tooltip=&quot;game2_httpTest/testCase/gamesdk/userlogin.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/game2_httpTest/testCase/gamesdk/userlogin.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;Log.py&quot; tooltip=&quot;game2_httpTest/common/Log.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/game2_httpTest/common/Log.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;commonAw.py&quot; tooltip=&quot;game2_httpTest/common/commonAw.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/game2_httpTest/common/commonAw.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
+  <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;output.log&quot; tooltip=&quot;game2_httpTest/result/20180820103304/output.log&quot;>&#xD;&#xA;&lt;persistable path=&quot;/game2_httpTest/result/20180820103304/output.log&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;gotham_runAll.py&quot; tooltip=&quot;game2_httpTest/gotham_runAll.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/game2_httpTest/gotham_runAll.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;gotham_caselist.txt&quot; tooltip=&quot;game2_httpTest/gotham_caselist.txt&quot;>&#xD;&#xA;&lt;persistable path=&quot;/game2_httpTest/gotham_caselist.txt&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;testGameSaveCreate.py&quot; tooltip=&quot;game2_httpTest/testCase/gotham/testGameSaveCreate.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/game2_httpTest/testCase/gotham/testGameSaveCreate.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;output.log&quot; tooltip=&quot;game2_httpTest/result/20180820103001/output.log&quot;>&#xD;&#xA;&lt;persistable path=&quot;/game2_httpTest/result/20180820103001/output.log&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;output.log&quot; tooltip=&quot;game2_httpTest/result/20180820101159/output.log&quot;>&#xD;&#xA;&lt;persistable path=&quot;/game2_httpTest/result/20180820101159/output.log&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;Log.py&quot; tooltip=&quot;game2_httpTest/common/Log.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/game2_httpTest/common/Log.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;output.log&quot; tooltip=&quot;game2_httpTest/result/20180820102517/output.log&quot;>&#xD;&#xA;&lt;persistable path=&quot;/game2_httpTest/result/20180820102517/output.log&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;output.log&quot; tooltip=&quot;game2_httpTest/result/20180820102734/output.log&quot;>&#xD;&#xA;&lt;persistable path=&quot;/game2_httpTest/result/20180820102734/output.log&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.ui.DefaultTextEditor&quot; name=&quot;output.log&quot; tooltip=&quot;game2_httpTest/result/20180820102805/output.log&quot;>&#xD;&#xA;&lt;persistable path=&quot;/game2_httpTest/result/20180820102805/output.log&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;testcompanyList.py&quot; tooltip=&quot;game2_httpTest/testCase/gotham/testcompanyList.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/game2_httpTest/testCase/gotham/testcompanyList.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;testGameSaveUpdate.py&quot; tooltip=&quot;game2_httpTest/testCase/gotham/testGameSaveUpdate.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/game2_httpTest/testCase/gotham/testGameSaveUpdate.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;GothamApiParam.py&quot; tooltip=&quot;game2_httpTest/apiparam/GothamApiParam.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/game2_httpTest/apiparam/GothamApiParam.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;testGameList.py&quot; tooltip=&quot;game2_httpTest/testCase/gotham/testGameList.py&quot;>&#xD;&#xA;&lt;persistable path=&quot;/game2_httpTest/testCase/gotham/testGameList.py&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.jdt.ui.ClassFileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.ClassFileEditorNoSource&quot; name=&quot;Log.class&quot; tooltip=&quot;sun.rmi.runtime.Log&quot;>&#xD;&#xA;&lt;persistable org.eclipse.jdt.ui.ClassFileIdentifier=&quot;=encrypt/C:\/Program Files\/Java\/jre1.8.0_151\/lib\/rt.jar&amp;lt;sun.rmi.runtime(Log.class&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
   <children xsi:type="basic:TrimmedWindow" xmi:id="_MkQ1EZpCEeirZu-2NFb9Jw" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_MkQ1EppCEeirZu-2NFb9Jw" label="%trimmedwindow.label.eclipseSDK" x="0" y="0" width="1024" height="768">
@@ -147,7 +147,7 @@
               <tags>active</tags>
               <children xsi:type="advanced:Placeholder" xmi:id="_MkQ1MZpCEeirZu-2NFb9Jw" elementId="org.python.pydev.navigator.view" ref="_MkRcxJpCEeirZu-2NFb9Jw"/>
             </children>
-            <children xsi:type="basic:PartSashContainer" xmi:id="_MkQ1MppCEeirZu-2NFb9Jw" containerData="7400" selectedElement="_MkQ1M5pCEeirZu-2NFb9Jw">
+            <children xsi:type="basic:PartSashContainer" xmi:id="_MkQ1MppCEeirZu-2NFb9Jw" containerData="7400" selectedElement="_MkQ1N5pCEeirZu-2NFb9Jw">
               <children xsi:type="basic:PartSashContainer" xmi:id="_MkQ1M5pCEeirZu-2NFb9Jw" containerData="5987" selectedElement="_MkQ1NJpCEeirZu-2NFb9Jw" horizontal="true">
                 <children xsi:type="advanced:Placeholder" xmi:id="_MkQ1NJpCEeirZu-2NFb9Jw" elementId="org.eclipse.ui.editorss" containerData="7500" ref="_MkQ2o5pCEeirZu-2NFb9Jw"/>
                 <children xsi:type="basic:PartStack" xmi:id="_MkQ1NZpCEeirZu-2NFb9Jw" elementId="org.eclipse.ui.views.ContentOutlineMStack" containerData="2500" selectedElement="_MkQ1NppCEeirZu-2NFb9Jw">
@@ -157,13 +157,14 @@
               <children xsi:type="basic:PartStack" xmi:id="_MkQ1N5pCEeirZu-2NFb9Jw" elementId="bottom" containerData="4013" selectedElement="_MkQ1OZpCEeirZu-2NFb9Jw">
                 <tags>PyDev</tags>
                 <tags>Android</tags>
-                <tags>noFocus</tags>
+                <tags>Remote Systems</tags>
                 <children xsi:type="advanced:Placeholder" xmi:id="_MkQ1OJpCEeirZu-2NFb9Jw" elementId="org.eclipse.search.ui.views.SearchView" toBeRendered="false" ref="_MkRcjZpCEeirZu-2NFb9Jw"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_MkQ1OZpCEeirZu-2NFb9Jw" elementId="org.eclipse.ui.console.ConsoleView" ref="_MkRcZJpCEeirZu-2NFb9Jw"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_MkQ1OppCEeirZu-2NFb9Jw" elementId="org.eclipse.ui.views.BookmarkView" toBeRendered="false" ref="_MkRci5pCEeirZu-2NFb9Jw"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_MkQ1O5pCEeirZu-2NFb9Jw" elementId="org.eclipse.ui.views.ProgressView" toBeRendered="false" ref="_MkRcjJpCEeirZu-2NFb9Jw"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_MkQ1PJpCEeirZu-2NFb9Jw" elementId="org.python.pydev.debug.pyunit.pyUnitView" ref="_MkRcs5pCEeirZu-2NFb9Jw"/>
                 <children xsi:type="advanced:Placeholder" xmi:id="_MkQ1PZpCEeirZu-2NFb9Jw" elementId="org.python.pydev.views.PyCodeCoverageView" toBeRendered="false" ref="_MkRdDppCEeirZu-2NFb9Jw"/>
+                <children xsi:type="advanced:Placeholder" xmi:id="_PKCGAKQdEei0xIsLjndKKw" elementId="org.eclipse.rse.ui.view.systemView" ref="_PKBe8KQdEei0xIsLjndKKw"/>
               </children>
             </children>
           </children>
@@ -199,98 +200,10 @@
       <tags>categoryTag:Help</tags>
     </sharedElements>
     <sharedElements xsi:type="advanced:Area" xmi:id="_MkQ2o5pCEeirZu-2NFb9Jw" elementId="org.eclipse.ui.editorss" selectedElement="_MkQ2pJpCEeirZu-2NFb9Jw">
-      <children xsi:type="basic:PartStack" xmi:id="_MkQ2pJpCEeirZu-2NFb9Jw" elementId="org.eclipse.e4.primaryDataStack" selectedElement="_MkQ2sJpCEeirZu-2NFb9Jw">
+      <children xsi:type="basic:PartStack" xmi:id="_MkQ2pJpCEeirZu-2NFb9Jw" elementId="org.eclipse.e4.primaryDataStack">
         <tags>org.eclipse.e4.primaryDataStack</tags>
         <tags>EditorStack</tags>
         <children xsi:type="advanced:Placeholder" xmi:id="_MkQ2pZpCEeirZu-2NFb9Jw" elementId="com.android.ide.eclipse.ddms.views.DeviceView" toBeRendered="false" ref="_MkRdC5pCEeirZu-2NFb9Jw"/>
-        <children xsi:type="basic:Part" xmi:id="_MkQ2sJpCEeirZu-2NFb9Jw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="configHttp" iconURI="platform:/plugin/org.python.pydev.shared_ui/icons/python_file.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;configHttp.py&quot; partName=&quot;configHttp&quot; title=&quot;configHttp&quot; tooltip=&quot;game2_httpTest/common/configHttp.py&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/game2_httpTest/common/configHttp.py&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2626&quot; selectionTopPixel=&quot;1463&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.python.pydev.editor.PythonEditor</tags>
-          <tags>removeOnHide</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_MkQ2sZpCEeirZu-2NFb9Jw" elementId="#PyEditContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#PyEditContext</tags>
-            <tags>popup:org.python.pydev.editor.PythonEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_MkQ2sppCEeirZu-2NFb9Jw" elementId="#PyEditRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#PyEditRulerContext</tags>
-            <tags>popup:org.python.pydev.editor.PythonEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_MkQ2s5pCEeirZu-2NFb9Jw" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_MkQ2tJpCEeirZu-2NFb9Jw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="commonAw" iconURI="platform:/plugin/org.python.pydev.shared_ui/icons/python_file.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;commonAw.py&quot; partName=&quot;commonAw&quot; title=&quot;commonAw&quot; tooltip=&quot;game2_httpTest/common/commonAw.py&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/game2_httpTest/common/commonAw.py&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;33&quot; selectionOffset=&quot;1892&quot; selectionTopPixel=&quot;1273&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.python.pydev.editor.PythonEditor</tags>
-          <tags>removeOnHide</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_MkQ2tZpCEeirZu-2NFb9Jw" elementId="#PyEditContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#PyEditContext</tags>
-            <tags>popup:org.python.pydev.editor.PythonEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_MkQ2tppCEeirZu-2NFb9Jw" elementId="#PyEditRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#PyEditRulerContext</tags>
-            <tags>popup:org.python.pydev.editor.PythonEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_MkQ2t5pCEeirZu-2NFb9Jw" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_MkQ2uJpCEeirZu-2NFb9Jw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="configDB" iconURI="platform:/plugin/org.python.pydev.shared_ui/icons/python_file.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;configDB.py&quot; partName=&quot;configDB&quot; title=&quot;configDB&quot; tooltip=&quot;game2_httpTest/common/configDB.py&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/game2_httpTest/common/configDB.py&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;154&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.python.pydev.editor.PythonEditor</tags>
-          <tags>removeOnHide</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_MkQ2uZpCEeirZu-2NFb9Jw" elementId="#PyEditContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#PyEditContext</tags>
-            <tags>popup:org.python.pydev.editor.PythonEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_MkQ2uppCEeirZu-2NFb9Jw" elementId="#PyEditRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#PyEditRulerContext</tags>
-            <tags>popup:org.python.pydev.editor.PythonEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_MkQ2u5pCEeirZu-2NFb9Jw" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-        </children>
-        <children xsi:type="basic:Part" xmi:id="_MkQ2vJpCEeirZu-2NFb9Jw" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="userinfo" iconURI="platform:/plugin/org.python.pydev.shared_ui/icons/python_file.gif" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.python.pydev.editor.PythonEditor&quot; name=&quot;userinfo.py&quot; partName=&quot;userinfo&quot; title=&quot;userinfo&quot; tooltip=&quot;game2_httpTest/testCase/gamesdk/userinfo.py&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/game2_httpTest/testCase/gamesdk/userinfo.py&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;36&quot; selectionOffset=&quot;198&quot; selectionTopPixel=&quot;0&quot;/>&#xD;&#xA;&lt;/editor>"/>
-          <tags>Editor</tags>
-          <tags>org.python.pydev.editor.PythonEditor</tags>
-          <tags>removeOnHide</tags>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_MkQ2vZpCEeirZu-2NFb9Jw" elementId="#PyEditContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#PyEditContext</tags>
-            <tags>popup:org.python.pydev.editor.PythonEditor.EditorContext</tags>
-            <tags>popup:#AbstractTextEditorContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_MkQ2vppCEeirZu-2NFb9Jw" elementId="#PyEditRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#PyEditRulerContext</tags>
-            <tags>popup:org.python.pydev.editor.PythonEditor.RulerContext</tags>
-            <tags>popup:#AbstractTextEditorRulerContext</tags>
-          </menus>
-          <menus xsi:type="menu:PopupMenu" xmi:id="_MkQ2v5pCEeirZu-2NFb9Jw" elementId="#OverviewRulerContext">
-            <tags>menuContribution:popup</tags>
-            <tags>popup:#OverviewRulerContext</tags>
-          </menus>
-        </children>
       </children>
     </sharedElements>
     <sharedElements xsi:type="basic:Part" xmi:id="_MkQ23ZpCEeirZu-2NFb9Jw" elementId="org.eclipse.ui.navigator.ProjectExplorer" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Project Explorer" iconURI="platform:/plugin/org.eclipse.ui.navigator.resources/icons/full/eview16/resource_persp.gif" tooltip="" closeable="true">
@@ -548,7 +461,7 @@
     <sharedElements xsi:type="basic:Part" xmi:id="_MkRcxJpCEeirZu-2NFb9Jw" elementId="org.python.pydev.navigator.view" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="PyDev Package Explorer" iconURI="platform:/plugin/org.python.pydev.shared_ui/icons/pydev_package_explorer.gif" tooltip="" closeable="true">
       <persistedState key="originalCompatibilityViewBundle" value="org.python.pydev"/>
       <persistedState key="originalCompatibilityViewClass" value="org.python.pydev.navigator.ui.PydevPackageExplorer"/>
-      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot; currentWorkingSetName=&quot;Aggregate for window 1528078712851&quot; org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets=&quot;0&quot;>&#xD;&#xA;&lt;expanded IMemento.internal.id=&quot;F:/github_code/httptest/game2_httpTest&quot;/>&#xD;&#xA;&lt;expanded IMemento.internal.id=&quot;F:/github_code/httptest/game2_httpTest/testCase&quot;/>&#xD;&#xA;&lt;selected IMemento.internal.id=&quot;F:/github_code/httptest/game2_httpTest&quot;/>&#xD;&#xA;&lt;/view>"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view CommonNavigator.LINKING_ENABLED=&quot;0&quot; currentWorkingSetName=&quot;Aggregate for window 1528078712851&quot; org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets=&quot;0&quot;>&#xD;&#xA;&lt;expanded IMemento.internal.id=&quot;F:/github_code/httptest/game2_httpTest&quot;/>&#xD;&#xA;&lt;expanded IMemento.internal.id=&quot;F:/github_code/httptest/game2_httpTest/apiparam&quot;/>&#xD;&#xA;&lt;expanded IMemento.internal.id=&quot;F:/github_code/httptest/game2_httpTest/result&quot;/>&#xD;&#xA;&lt;expanded IMemento.internal.id=&quot;F:/github_code/httptest/game2_httpTest/testCase&quot;/>&#xD;&#xA;&lt;selected IMemento.internal.id=&quot;F:/github_code/httptest/game2_httpTest/result&quot;/>&#xD;&#xA;&lt;/view>"/>
       <tags>View</tags>
       <tags>categoryTag:PyDev</tags>
       <tags>active</tags>
@@ -598,6 +511,18 @@
       </menus>
       <toolbar xmi:id="_MkRdEJpCEeirZu-2NFb9Jw" elementId="org.python.pydev.views.PyCodeCoverageView" visible="false"/>
     </sharedElements>
+    <sharedElements xsi:type="basic:Part" xmi:id="_PKBe8KQdEei0xIsLjndKKw" elementId="org.eclipse.rse.ui.view.systemView" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView" label="Remote Systems" iconURI="platform:/plugin/org.eclipse.rse.ui/icons/full/cview16/system_view.gif" tooltip="" closeable="true">
+      <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.rse.ui"/>
+      <persistedState key="originalCompatibilityViewClass" value="org.eclipse.rse.internal.ui.view.SystemViewPart"/>
+      <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;view horizontalPosition=&quot;0&quot; linkWithEditor=&quot;f&quot; release=&quot;2.0.0&quot; showFilterPools=&quot;f&quot; verticalPosition=&quot;2&quot;>&#xD;&#xA;&lt;expanded>&#xD;&#xA;&lt;element path=&quot;Conn///DESKTOP-UO78GTB.Local&quot;/>&#xD;&#xA;&lt;element path=&quot;Subs///DESKTOP-UO78GTB.Local///local.files=Local Files&quot;/>&#xD;&#xA;&lt;element path=&quot;FRef///DESKTOP-UO78GTB.Local///local.files=Local Files///DESKTOP-UO78GTB___DESKTOP-UO78GTB:local.files=Drives&quot;/>&#xD;&#xA;&lt;element path=&quot;Remote///DESKTOP-UO78GTB.Local///local.files=Local Files///DESKTOP-UO78GTB___DESKTOP-UO78GTB:local.files=Drives///F:\&quot;/>&#xD;&#xA;&lt;element path=&quot;Remote///DESKTOP-UO78GTB.Local///local.files=Local Files///DESKTOP-UO78GTB___DESKTOP-UO78GTB:local.files=Drives///F:\///F:\github_code&quot;/>&#xD;&#xA;&lt;element path=&quot;Remote///DESKTOP-UO78GTB.Local///local.files=Local Files///DESKTOP-UO78GTB___DESKTOP-UO78GTB:local.files=Drives///F:\///F:\github_code///F:\github_code\httptest&quot;/>&#xD;&#xA;&lt;/expanded>&#xD;&#xA;&lt;selection>&#xD;&#xA;&lt;element path=&quot;Remote///DESKTOP-UO78GTB.Local///local.files=Local Files///DESKTOP-UO78GTB___DESKTOP-UO78GTB:local.files=Drives///F:\///F:\github_code///F:\github_code\httptest///F:\github_code\httptest\RemoteSystemsTempFiles&quot;/>&#xD;&#xA;&lt;/selection>&#xD;&#xA;&lt;/view>"/>
+      <tags>View</tags>
+      <tags>categoryTag:Remote Systems</tags>
+      <menus xmi:id="_PKUZ4KQdEei0xIsLjndKKw" elementId="org.eclipse.rse.ui.view.systemView">
+        <tags>ViewMenu</tags>
+        <tags>menuContribution:menu</tags>
+      </menus>
+      <toolbar xmi:id="_PKUZ4aQdEei0xIsLjndKKw" elementId="org.eclipse.rse.ui.view.systemView" visible="false"/>
+    </sharedElements>
     <trimBars xmi:id="_MkRdEZpCEeirZu-2NFb9Jw" elementId="org.eclipse.ui.main.toolbar">
       <children xsi:type="menu:ToolBar" xmi:id="_MkRdEppCEeirZu-2NFb9Jw" elementId="group.file" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -605,7 +530,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_MkRdFJpCEeirZu-2NFb9Jw" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_TltxUJ7yEeirwuT6W8P4fw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_MkVHTppCEeirZu-2NFb9Jw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_4WD-8KQcEei0xIsLjndKKw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_MkVHTppCEeirZu-2NFb9Jw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_MkRdIZpCEeirZu-2NFb9Jw" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -638,7 +563,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_MkRdippCEeirZu-2NFb9Jw" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_TlwNkJ7yEeirwuT6W8P4fw" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_MkVG7JpCEeirZu-2NFb9Jw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_4WGbMKQcEei0xIsLjndKKw" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_MkVG7JpCEeirZu-2NFb9Jw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_MkRdlppCEeirZu-2NFb9Jw" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -949,6 +874,10 @@
     <bindings xmi:id="_MkSDiJpCEeirZu-2NFb9Jw" keySequence="ALT+SHIFT+A S" command="_MkVI95pCEeirZu-2NFb9Jw"/>
     <bindings xmi:id="_MkSDiZpCEeirZu-2NFb9Jw" keySequence="ALT+SHIFT+A D" command="_MkVJHZpCEeirZu-2NFb9Jw"/>
     <bindings xmi:id="_MkSDippCEeirZu-2NFb9Jw" keySequence="ALT+SHIFT+A R" command="_MkVI05pCEeirZu-2NFb9Jw"/>
+    <bindings xmi:id="_2E5NkKQcEei0xIsLjndKKw" keySequence="ALT+SHIFT+D G" command="_2EEHIqQcEei0xIsLjndKKw"/>
+    <bindings xmi:id="_2E50oKQcEei0xIsLjndKKw" keySequence="ALT+SHIFT+D N" command="_2EDgEqQcEei0xIsLjndKKw"/>
+    <bindings xmi:id="_2E_7QKQcEei0xIsLjndKKw" keySequence="ALT+SHIFT+X N" command="_2EEHIKQcEei0xIsLjndKKw"/>
+    <bindings xmi:id="_2FAiUKQcEei0xIsLjndKKw" keySequence="ALT+SHIFT+X G" command="_2EDgE6QcEei0xIsLjndKKw"/>
   </bindingTables>
   <bindingTables xmi:id="_MkSDi5pCEeirZu-2NFb9Jw" elementId="org.eclipse.tm.terminal.EditContext" bindingContext="_MkSqT5pCEeirZu-2NFb9Jw">
     <bindings xmi:id="_MkSDjJpCEeirZu-2NFb9Jw" keySequence="ALT+ARROW_RIGHT" command="_MkVHtJpCEeirZu-2NFb9Jw"/>
@@ -2453,6 +2382,12 @@
     <persistedState key="originalCompatibilityViewBundle" value="org.eclipse.cdt.ui"/>
     <tags>View</tags>
     <tags>categoryTag:C/C++</tags>
+  </descriptors>
+  <descriptors xmi:id="_2W_qMKQcEei0xIsLjndKKw" elementId="org.testng.eclipse.ResultView" label="TestNG" iconURI="platform:/plugin/org.testng.eclipse/icons/full/main16/testng_blur.gif" tooltip="" category="Java" closeable="true" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityView">
+    <persistedState key="originalCompatibilityViewClass" value="org.testng.eclipse.ui.TestRunnerViewPart"/>
+    <persistedState key="originalCompatibilityViewBundle" value="org.testng.eclipse"/>
+    <tags>View</tags>
+    <tags>categoryTag:Java</tags>
   </descriptors>
   <trimContributions xmi:id="_2r10UF9tEeO-yojH_y4TJA" elementId="org.eclipse.ui.ide.application.trimcontribution.QuickAccess" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" toBeRendered="false" parentId="org.eclipse.ui.main.toolbar" positionInParent="last">
     <children xsi:type="menu:ToolControl" xmi:id="_76uUAF9tEeO-yojH_y4TJA" elementId="Spacer Glue" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.renderers.swt/org.eclipse.e4.ui.workbench.renderers.swt.LayoutModifierToolControl">
@@ -3994,6 +3929,15 @@
   <commands xmi:id="_MkVtsJpCEeirZu-2NFb9Jw" elementId="AUTOGEN:::org.eclipse.cdt.dsf.debug.ui.viewmodel.debugview.update.Refresh/org.eclipse.cdt.dsf.debug.ui.debugview.viewmodel.update.actions.refresh" commandName="Refresh" category="_MkVt2ppCEeirZu-2NFb9Jw"/>
   <commands xmi:id="_MkVtsZpCEeirZu-2NFb9Jw" elementId="AUTOGEN:::org.eclipse.cdt.debug.ui.disassembly.toolbar/org.eclipse.pinclone.disassembly.pinDebugContext" commandName="Pin to Debug Context" category="_MkVt2ppCEeirZu-2NFb9Jw"/>
   <commands xmi:id="_MkVtsppCEeirZu-2NFb9Jw" elementId="AUTOGEN:::org.eclipse.cdt.debug.ui.disassembly.toolbar/org.eclipse.pinclone.disassembly.clone" commandName="Open New View" category="_MkVt2ppCEeirZu-2NFb9Jw"/>
+  <commands xmi:id="_2EDgEaQcEei0xIsLjndKKw" elementId="org.testng.eclipse.createClassAction" commandName="Create TestNG class" description="Create a TestNG class to test this class" category="_MkVt65pCEeirZu-2NFb9Jw"/>
+  <commands xmi:id="_2EDgEqQcEei0xIsLjndKKw" elementId="org.testng.eclipse.shortcut.debug" commandName="Debug TestNG Test" description="Debug TestNG Test" category="_MkVt0JpCEeirZu-2NFb9Jw"/>
+  <commands xmi:id="_2EDgE6QcEei0xIsLjndKKw" elementId="org.testng.eclipse.shortcut.testngSuite.run" commandName="Run TestNG Suite" description="Run TestNG Suite" category="_MkVt0JpCEeirZu-2NFb9Jw"/>
+  <commands xmi:id="_2EEHIKQcEei0xIsLjndKKw" elementId="org.testng.eclipse.shortcut.run" commandName="Run TestNG Test" description="Run TestNG Test" category="_MkVt0JpCEeirZu-2NFb9Jw"/>
+  <commands xmi:id="_2EEHIaQcEei0xIsLjndKKw" elementId="org.testng.eclipse.shortcut.rerunFailed" commandName="Rerun Failed TestNG Test" description="Rerun the failed TestNG Test" category="_MkVt0JpCEeirZu-2NFb9Jw"/>
+  <commands xmi:id="_2EEHIqQcEei0xIsLjndKKw" elementId="org.testng.eclipse.shortcut.testngSuite.debug" commandName="Debug TestNG Suite" description="Debug TestNG Suite" category="_MkVt0JpCEeirZu-2NFb9Jw"/>
+  <commands xmi:id="_2EEHI6QcEei0xIsLjndKKw" elementId="org.testng.eclipse.shortcut.rerunLast" commandName="Rerun TestNG Test" description="Rerun the last TestNG Test" category="_MkVt0JpCEeirZu-2NFb9Jw"/>
+  <commands xmi:id="_2EEHJKQcEei0xIsLjndKKw" elementId="org.testng.eclipse.convertToYamlAction" commandName="Convert to YAML" description="Convert the TestNG Suite XML file to YAML" category="_MkVt2ppCEeirZu-2NFb9Jw"/>
+  <commands xmi:id="_2EEHJaQcEei0xIsLjndKKw" elementId="org.testng.eclipse.convertAction" commandName="Convert to TestNG" description="Convert the selection to TestNG" category="_MkVt65pCEeirZu-2NFb9Jw"/>
   <addons xmi:id="_MkVts5pCEeirZu-2NFb9Jw" elementId="org.eclipse.e4.core.commands.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_MkVttJpCEeirZu-2NFb9Jw" elementId="org.eclipse.e4.ui.contexts.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_MkVttZpCEeirZu-2NFb9Jw" elementId="org.eclipse.e4.ui.bindings.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>

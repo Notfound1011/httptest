@@ -1,0 +1,53 @@
+2018-08-20 10:28:05,657 - rrtv_testgroup - INFO - ********TEST START********
+2018-08-20 10:28:05,804 - rrtv_testgroup - INFO - ----------   LOG NO.1 ------------
+2018-08-20 10:28:05,805 - rrtv_testgroup - INFO - Casename: testLoginWithAccountNoPermission
+    Body: loginName=test&pwd=202cb962ac59075b964b07152d234b70&type=BUSINESS
+2018-08-20 10:28:05,805 - rrtv_testgroup - INFO -     StatusCode:200
+2018-08-20 10:28:05,805 - rrtv_testgroup - INFO -     Response: {"msg":"您没有权限登录","code":"1002","data":{},"recordsTotal":0}
+2018-08-20 10:28:05,842 - rrtv_testgroup - INFO - ----------   LOG NO.2 ------------
+2018-08-20 10:28:05,842 - rrtv_testgroup - INFO - Casename: testLoginWithAccountNotExist
+    Body: loginName=AccountNotExist&pwd=e10adc3949ba59abbe56e057f20f883e&type=BUSINESS
+2018-08-20 10:28:05,843 - rrtv_testgroup - INFO -     StatusCode:200
+2018-08-20 10:28:05,843 - rrtv_testgroup - INFO -     Response: {"msg":"账号不存在","code":"1002","data":{},"recordsTotal":0}
+2018-08-20 10:28:05,893 - rrtv_testgroup - INFO - ----------   LOG NO.3 ------------
+2018-08-20 10:28:05,894 - rrtv_testgroup - INFO - Casename: testLoginWithRightPasswd
+    Body: loginName=admin&pwd=e10adc3949ba59abbe56e057f20f883e&type=BUSINESS
+2018-08-20 10:28:05,894 - rrtv_testgroup - INFO -     StatusCode:200
+2018-08-20 10:28:05,894 - rrtv_testgroup - INFO -     Response: {"msg":"","code":"0000","data":{"id":16,"createTime":1533018369000,"updateTime":1533018369000,"createTimeStr":"07-31 14:26","type":"BUSINESS","loginName":"admin","nickName":"牛二","pwd":"","salt":"","realName":"张山","mobile":"18725874125","channelId":null,"gameChannel":null,"parentChannelId":null,"payAccount":"","token":"4d496f8ba082428e9db408fa7e5ab20c"},"recordsTotal":0}
+2018-08-20 10:28:05,927 - rrtv_testgroup - INFO - ----------   LOG NO.4 ------------
+2018-08-20 10:28:05,927 - rrtv_testgroup - INFO - Casename: testLoginWithWrongPasswd
+    Body: loginName=admin&pwd=202cb962ac59075b964b07152d234b70&type=BUSINESS
+2018-08-20 10:28:05,927 - rrtv_testgroup - INFO -     StatusCode:200
+2018-08-20 10:28:05,927 - rrtv_testgroup - INFO -     Response: {"msg":"密码错误","code":"1004","data":{},"recordsTotal":0}
+2018-08-20 10:28:05,965 - rrtv_testgroup - INFO - ----------   LOG NO.5 ------------
+2018-08-20 10:28:05,965 - rrtv_testgroup - INFO - Casename: testGameListWithToken
+    Body: keyword=&page=1&rows=15&token=2bdcd5fbf9d54c8888c4a5d371757e43
+2018-08-20 10:28:05,966 - rrtv_testgroup - INFO -     StatusCode:200
+2018-08-20 10:28:05,966 - rrtv_testgroup - INFO -     Response: {"msg":"","code":"0000","data":[{"id":1052,"createTime":1534485523000,"updateTime":1534485523000,"createTimeStr":"08-17 13:58","channelId":null,"name":"彭于晏","companyId":41,"companyName":"A座16楼1604室","deliveryUrl":null,"secretKey":null},{"id":1051,"createTime":1534484238000,"updateTime":1534484238000,"createTimeStr":"08-17 13:37","channelId":null,"name":"石乐志","companyId":41,"companyName":"A座16楼1604室","deliveryUrl":null,"secretKey":null},{"id":1050,"createTime":1533541148000,"updateTime":1533541148000,"createTimeStr":"08-06 15:39","channelId":null,"name":"泰斯特08","companyId":39,"companyName":"人人测试","deliveryUrl":null,"secretKey":null},{"id":1049,"createTime":1533530916000,"updateTime":1533531102000,"createTimeStr":"08-06 12:48","channelId":null,"name":"特斯特07","companyId":39,"companyName":"人人测试","deliveryUrl":"","secretKey":""},{"id":1048,"createTime":1533284511000,"updateTime":1533284511000,"createTimeStr":"08-03 16:21","channelId":null,"name":"特斯特06","companyId":39,"companyName":"人人测试","deliveryUrl":"","secretKey":""},{"id":1047,"createTime":1533181399000,"updateTime":1533181399000,"createTimeStr":"08-02 11:43","channelId":null,"name":"特斯特05","companyId":39,"companyName":"人人测试","deliveryUrl":"","secretKey":""},{"id":1046,"createTime":1533088429000,"updateTime":1533088429000,"createTimeStr":"08-01 09:53","channelId":null,"name":"特斯特04","companyId":38,"companyName":"海南畅娱","deliveryUrl":"21312","secretKey":"312321"},{"id":1045,"createTime":1533039544000,"updateTime":1533039544000,"createTimeStr":"07-31 20:19","channelId":null,"name":"特斯特03","companyId":37,"companyName":"4399手游","deliveryUrl":null,"secretKey":null},{"id":1044,"createTime":1533038204000,"updateTime":1533038204000,"createTimeStr":"07-31 19:56","channelId":null,"name":"小龙人","companyId":36,"companyName":"37手游","deliveryUrl":null,"secretKey":null},{"id":1043,"createTime":1533031878000,"updateTime":1533031878000,"createTimeStr":"07-31 18:11","channelId":null,"name":"特斯特02","companyId":38,"companyName":"海南畅娱","deliveryUrl":null,"secretKey":null},{"id":1042,"createTime":1533031847000,"updateTime":1533031847000,"createTimeStr":"07-31 18:10","channelId":null,"name":"泰斯特01","companyId":38,"companyName":"海南畅娱","deliveryUrl":null,"secretKey":null},{"id":1041,"createTime":1532411923000,"updateTime":1532413150000,"createTimeStr":"07-24 13:58","channelId":null,"name":"大爆炸","companyId":38,"companyName":"海南畅娱","deliveryUrl":"http://sync.1sdk.cn/cb/renrenshipin/F87A6C852040F873/sync.html","secretKey":"ztckbg39zbwtivxhluy672e149lcc1lo"},{"id":1040,"createTime":1533022417000,"updateTime":1533022417000,"createTimeStr":"07-31 15:33","channelId":null,"name":"大天使","companyId":38,"companyName":"海南畅娱","deliveryUrl":"","secretKey":""},{"id":1038,"createTime":1530083905000,"updateTime":1530083905000,"createTimeStr":"06-27 15:18","channelId":null,"name":"大天使之剑","companyId":36,"companyName":"37手游","deliveryUrl":"","secretKey":"4xkqwdw9bvxgm0vgdtimwy0ci2l0rr1u"},{"id":1037,"createTime":1529554189000,"updateTime":1529554189000,"createTimeStr":"06-21 12:09","channelId":null,"name":"仙灵觉醒","companyId":36,"companyName":"37手游","deliveryUrl":"","secretKey":"vb9hwxfwa0f837yu3q63d7ebnqtkkhvg"}],"recordsTotal":36}
+2018-08-20 10:28:05,999 - rrtv_testgroup - INFO - ----------   LOG NO.6 ------------
+2018-08-20 10:28:05,999 - rrtv_testgroup - INFO - Casename: testGameListWithoutToken
+    Body: keyword=&page=1&rows=15&token=
+2018-08-20 10:28:05,999 - rrtv_testgroup - INFO -     StatusCode:500
+2018-08-20 10:28:05,999 - rrtv_testgroup - INFO -     Response: {"timestamp":1534732085921,"status":500,"error":"Internal Server Error","exception":"com.rrtv.game.exception.GameBaseException","message":"token为空","path":"/game/list"}
+2018-08-20 10:28:06,037 - rrtv_testgroup - INFO - ----------   LOG NO.7 ------------
+2018-08-20 10:28:06,037 - rrtv_testgroup - INFO - Casename: testSearchGameListByOne
+    Body: keyword=%E8%A5%BF%E6%B8%B8%E8%AF%80&page=1&rows=15&token=2bdcd5fbf9d54c8888c4a5d371757e43
+2018-08-20 10:28:06,038 - rrtv_testgroup - INFO -     StatusCode:200
+2018-08-20 10:28:06,038 - rrtv_testgroup - INFO -     Response: {"msg":"","code":"0000","data":[{"id":1001,"createTime":1512700864000,"updateTime":1515482088000,"createTimeStr":"12-08 10:41","channelId":10001,"name":"西游诀","companyId":1,"companyName":"才宝","deliveryUrl":"http://sync.1sdk.cn/cb/renrenshipin/BED427096E2870F0/sync.html","secretKey":"123456"}],"recordsTotal":1}
+2018-08-20 10:28:06,077 - rrtv_testgroup - INFO - ----------   LOG NO.8 ------------
+2018-08-20 10:28:06,078 - rrtv_testgroup - INFO - Casename: testgameSaveUpdateUpdateUseCn
+    Body: companyId=1&deliveryUrl=%E6%B5%8B%E8%AF%95%E4%B8%AD%E6%96%87&id=1001&name=%E6%B5%8B%E8%AF%95%E4%B8%AD%E6%96%87&secretKey=123456&token=2bdcd5fbf9d54c8888c4a5d371757e43
+2018-08-20 10:28:06,078 - rrtv_testgroup - INFO -     StatusCode:200
+2018-08-20 10:28:06,078 - rrtv_testgroup - INFO -     Response: {"msg":"","code":"0000","data":{"id":1001,"createTime":1512700864000,"updateTime":1515482088000,"createTimeStr":"12-08 10:41","channelId":10001,"name":"测试中文","companyId":1,"companyName":"才宝","deliveryUrl":"测试中文","secretKey":"123456"},"recordsTotal":0}
+2018-08-20 10:28:06,148 - rrtv_testgroup - INFO - ----------   LOG NO.9 ------------
+2018-08-20 10:28:06,148 - rrtv_testgroup - INFO - Casename: testgameSaveUpdateUpdateUseEn
+    Body: companyId=1&deliveryUrl=testupdate&id=1001&name=testupdateEn&secretKey=123456&token=2bdcd5fbf9d54c8888c4a5d371757e43
+2018-08-20 10:28:06,148 - rrtv_testgroup - INFO -     StatusCode:200
+2018-08-20 10:28:06,149 - rrtv_testgroup - INFO -     Response: {"msg":"","code":"0000","data":{"id":1001,"createTime":1512700864000,"updateTime":1515482088000,"createTimeStr":"12-08 10:41","channelId":10001,"name":"testupdateEn","companyId":1,"companyName":"才宝","deliveryUrl":"testupdate","secretKey":"123456"},"recordsTotal":0}
+2018-08-20 10:28:06,222 - rrtv_testgroup - INFO - ----------   LOG NO.10 ------------
+2018-08-20 10:28:06,222 - rrtv_testgroup - INFO - Casename: testgameSaveUpdateUpdateUseNull
+    Body: companyId=1&deliveryUrl=&id=1001&name=&secretKey=123456&token=2bdcd5fbf9d54c8888c4a5d371757e43
+2018-08-20 10:28:06,222 - rrtv_testgroup - INFO -     StatusCode:200
+2018-08-20 10:28:06,222 - rrtv_testgroup - INFO -     Response: {"msg":"","code":"0000","data":{"id":1001,"createTime":1512700864000,"updateTime":1515482088000,"createTimeStr":"12-08 10:41","channelId":10001,"name":"","companyId":1,"companyName":"才宝","deliveryUrl":"","secretKey":"123456"},"recordsTotal":0}
+2018-08-20 10:28:06,251 - rrtv_testgroup - INFO - *********TEST END*********
+2018-08-20 10:28:07,919 - rrtv_testgroup - INFO - The test report has send to developer by email.

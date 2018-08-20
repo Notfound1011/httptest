@@ -1,0 +1,8 @@
+2018-08-20 10:30:02,176 - rrtv_testgroup - INFO - ----------   LOG NO.1 ------------
+2018-08-20 10:30:02,177 - rrtv_testgroup - INFO - Casename: testgameSaveCreateUpdateUseCn    Body: companyId=1&deliveryUrl=%E6%B5%8B%E8%AF%95%E4%B8%AD%E6%96%87&id=1001&name=%E6%B5%8B%E8%AF%95%E4%B8%AD%E6%96%87&secretKey=123456&token=4d496f8ba082428e9db408fa7e5ab20c
+2018-08-20 10:30:02,177 - rrtv_testgroup - INFO -     StatusCode:200
+2018-08-20 10:30:02,177 - rrtv_testgroup - INFO -     Response: {"msg":"","code":"0000","data":{"id":1001,"createTime":1512700864000,"updateTime":1515482088000,"createTimeStr":"12-08 10:41","channelId":10001,"name":"测试中文","companyId":1,"companyName":"才宝","deliveryUrl":"测试中文","secretKey":"123456"},"recordsTotal":0}
+2018-08-20 10:30:02,318 - rrtv_testgroup - INFO - ----------   LOG NO.2 ------------
+2018-08-20 10:30:02,318 - rrtv_testgroup - INFO - Casename: testgameSaveCreateUpdateUseNull    Body: companyId=1&deliveryUrl=&id=1001&name=&secretKey=123456&token=4d496f8ba082428e9db408fa7e5ab20c
+2018-08-20 10:30:02,318 - rrtv_testgroup - INFO -     StatusCode:200
+2018-08-20 10:30:02,318 - rrtv_testgroup - INFO -     Response: {"msg":"","code":"0000","data":{"id":1001,"createTime":1512700864000,"updateTime":1515482088000,"createTimeStr":"12-08 10:41","channelId":10001,"name":"","companyId":1,"companyName":"才宝","deliveryUrl":"","secretKey":"123456"},"recordsTotal":0}

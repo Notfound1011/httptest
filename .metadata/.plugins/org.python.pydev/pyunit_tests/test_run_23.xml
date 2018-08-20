@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pydev-testrun version="1.0"?><pydev-testsuite>
+<summary errors="0" failures="0" finished="true" name="Test Run: 23" tests="4" total_time="Finished in: 0.23 secs."/>
+<test location="F:\github_code\httptest\game2_httpTest\testCase\gotham\testcompanyList.py" status="ok" test="CompanyList.testCompanyListWithCompanyname" time="0.14">
+<stdout><![CDATA[
+&#35831;&#27714;&#30340;url&#26159;&#65306; http://test.rr.tv:8098/company/list
+
+&#21709;&#24212;&#30340;status_code&#26159;&#65306; 200
+
+&#21709;&#24212;&#30340;body&#26159;&#65306; 
+{
+    "code": "0000",
+    "data": [
+        {
+            "createTime": 1513224201000,
+            "createTimeStr": "12-14 12:03",
+            "fullName": "&#19978;&#28023;&#25165;&#23453;&#32593;&#32476;&#31185;&#25216;&#26377;&#38480;&#20844;&#21496;",
+            "gameCount": 1,
+            "id": 1,
+            "shortName": "&#25165;&#23453;",
+            "updateTime": 1513224205000
+        }
+    ],
+    "msg": "",
+    "recordsTotal": 1
+}
+Casename: testCompanyListWithCompanyname
+    Body: keyword=%E4%B8%8A%E6%B5%B7%E6%89%8D%E5%AE%9D%E7%BD%91%E7%BB%9C%E7%A7%91%E6%8A%80%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8&page=1&rows=15&token=2bdcd5fbf9d54c8888c4a5d371757e43
+    StatusCode: 200
+    Response: {"msg":"","code":"0000","data":[{"id":1,"createTime":1513224201000,"updateTime":1513224205000,"createTimeStr":"12-14 12:03","shortName":"&#25165;&#23453;","fullName":"&#19978;&#28023;&#25165;&#23453;&#32593;&#32476;&#31185;&#25216;&#26377;&#38480;&#20844;&#21496;","gameCount":1}],"recordsTotal":1}
+]]></stdout>
+<stderr/>
+</test>
+<test location="F:\github_code\httptest\game2_httpTest\testCase\gotham\testcompanyList.py" status="ok" test="CompanyList.testCompanyListWithFirm" time="0.04">
+<stdout><![CDATA[
+&#35831;&#27714;&#30340;url&#26159;&#65306; http://test.rr.tv:8098/company/list
+
+&#21709;&#24212;&#30340;status_code&#26159;&#65306; 200
+
+&#21709;&#24212;&#30340;body&#26159;&#65306; 
+{
+    "code": "0000",
+    "data": [
+        {
+            "createTime": 1513224201000,
+            "createTimeStr": "12-14 12:03",
+            "fullName": "&#19978;&#28023;&#25165;&#23453;&#32593;&#32476;&#31185;&#25216;&#26377;&#38480;&#20844;&#21496;",
+            "gameCount": 1,
+            "id": 1,
+            "shortName": "&#25165;&#23453;",
+            "updateTime": 1513224205000
+        }
+    ],
+    "msg": "",
+    "recordsTotal": 1
+}
+Casename: testCompanyListWithFirm
+    Body: keyword=%E6%89%8D%E5%AE%9D&page=1&rows=15&token=2bdcd5fbf9d54c8888c4a5d371757e43
+    StatusCode: 200
+    Response: {"msg":"","code":"0000","data":[{"id":1,"createTime":1513224201000,"updateTime":1513224205000,"createTimeStr":"12-14 12:03","shortName":"&#25165;&#23453;","fullName":"&#19978;&#28023;&#25165;&#23453;&#32593;&#32476;&#31185;&#25216;&#26377;&#38480;&#20844;&#21496;","gameCount":1}],"recordsTotal":1}
+]]></stdout>
+<stderr/>
+</test>
+<test location="F:\github_code\httptest\game2_httpTest\testCase\gotham\testcompanyList.py" status="ok" test="CompanyList.testCompanyListWithToken" time="0.03">
+<stdout><![CDATA[
+&#35831;&#27714;&#30340;url&#26159;&#65306; http://test.rr.tv:8098/company/list
+
+&#21709;&#24212;&#30340;status_code&#26159;&#65306; 200
+
+&#21709;&#24212;&#30340;body&#26159;&#65306; 
+{
+    "code": "0000",
+    "data": [
+        {
+            "createTime": 1534485866000,
+            "createTimeStr": "08-17 14:04",
+            "fullName": "&#20154;&#20154;&#35270;&#39057;test",
+            "gameCount": 0,
+            "id": 42,
+            "shortName": "&#20154;&#20154;&#35270;&#39057;",
+            "updateTime": 1534485866000
+        },
+        {
+            "createTime": 1534484216000,
+            "createTimeStr": "08-17 13:36",
+            "fullName": "&#20154;&#20154;&#35270;&#39057;",
+            "gameCount": 2,
+            "id": 41,
+            "shortName": "A&#24231;16&#27004;1604&#23460;",
+            "updateTime": 1534484216000
+        },
+        {
+            "createTime": 1533178517000,
+            "createTimeStr": "08-02 10:55",
+            "fullName": "&#20154;&#20154;&#27979;&#35797;&#32593;&#32476;&#31185;&#25216;&#26377;&#38480;&#20844;&#21496;",
+            "gameCount": 4,
+            "id": 39,
+            "shortName": "&#20154;&#20154;&#27979;&#35797;",
+            "updateTime": 1533178517000
+        },
+        {
+            "createTime": 1532411894000,
+            "createTimeStr": "07-24 13:58",
+            "fullName": "&#28023;&#21335;&#30021;&#23089;&#32593;&#32476;&#31185;&#25216;&#26377;&#38480;&#20844;&#21496;",
+            "gameCount": 5,
+            "id": 38,
+            "shortName": "&#28023;&#21335;&#30021;&#23089;",
+            "updateTime": 1532411894000
+        },
+        {
+            "createTime": 1529551994000,
+            "createTimeStr": "06-21 11:33",
+            "fullName": "&#24191;&#24030;&#22235;&#19977;&#20061;&#20061;&#20449;&#24687;&#31185;&#25216;&#26377;&#38480;&#20844;&#21496;",
+            "gameCount": 2,
+            "id": 37,
+            "shortName": "4399&#25163;&#28216;",
+            "updateTime": 1529551994000
+        },
+        {
+            "createTime": 1529551027000,
+            "createTimeStr": "06-21 11:17",
+            "fullName": "&#38669;&#23572;&#26524;&#26031;&#26032;&#38160;&#32593;&#32476;&#31185;&#25216;&#26377;&#38480;&#20844;&#21496;",
+            "gameCount": 5,
+            "id": 36,
+            "shortName": "37&#25163;&#28216;",
+            "updateTime": 1529551027000
+        },
+        {
+            "createTime": 1529550616000,
+            "createTimeStr": "06-21 11:10",
+            "fullName": "&#38669;&#23572;&#26524;&#26031;&#28843;&#21160;&#32593;&#32476;&#31185;&#25216;&#26377;&#38480;&#20844;&#21496;",
+            "gameCount": 1,
+            "id": 35,
+            "shortName": "&#19975;&#36798;&#38498;&#32447;&#28216;&#25103;",
+            "updateTime": 1529550616000
+        },
+        {
+            "createTime": 1529387444000,
+            "createTimeStr": "06-19 13:50",
+            "fullName": "&#28023;&#21335;&#30021;&#37239;&#32593;&#32476;&#31185;&#25216;&#26377;&#38480;&#20844;&#21496;",
+            "gameCount": 1,
+            "id": 34,
+            "shortName": "&#28023;&#21335;&#30021;&#37239;",
+            "updateTime": 1529387444000
+        },
+        {
+            "createTime": 1526974133000,
+            "createTimeStr": "05-22 15:28",
+            "fullName": "&#27743;&#33487;&#39034;&#29609;&#20449;&#24687;&#31185;&#25216;&#26377;&#38480;&#20844;&#21496;",
+            "gameCount": 1,
+            "id": 33,
+            "shortName": "&#27743;&#33487;&#39034;&#29609;",
+            "updateTime": 1526974133000
+        },
+        {
+            "createTime": 1526526133000,
+            "createTimeStr": "05-17 11:02",
+            "fullName": "&#21335;&#20140;&#37239;&#30021;&#20449;&#24687;&#31185;&#25216;&#26377;&#38480;&#20844;&#21496;",
+            "gameCount": 1,
+            "id": 32,
+            "shortName": "&#21335;&#20140;&#37239;&#30021;",
+            "updateTime": 1526526133000
+        },
+        {
+            "createTime": 1525919276000,
+            "createTimeStr": "05-10 10:27",
+            "fullName": "&#21271;&#20140;&#23567;&#31859;&#20114;&#23089;",
+            "gameCount": 1,
+            "id": 31,
+            "shortName": "&#23567;&#31859;&#20114;&#23089;-&#34701;&#21512;",
+            "updateTime": 1525919276000
+        },
+        {
+            "createTime": 1525334558000,
+            "createTimeStr": "05-03 16:02",
+            "fullName": "&#21271;&#20140;&#31070;&#22855;&#28216;&#25103;",
+            "gameCount": 1,
+            "id": 30,
+            "shortName": "&#31070;&#22855;&#28216;&#25103;-QK",
+            "updateTime": 1525334558000
+        },
+        {
+            "createTime": 1523584694000,
+            "createTimeStr": "04-13 09:58",
+            "fullName": "&#27494;&#27721;&#24555;&#28216;&#20114;&#21160;&#20449;&#24687;&#25216;&#26415;&#26377;&#38480;&#20844;&#21496;",
+            "gameCount": 1,
+            "id": 29,
+            "shortName": "&#27494;&#27721;&#24555;&#28216;",
+            "updateTime": 1523584694000
+        },
+        {
+            "createTime": 1522823988000,
+            "createTimeStr": "04-04 14:39",
+            "fullName": "&#25104;&#37117;&#40857;&#28170;&#32593;&#32476;&#31185;&#25216;&#26377;&#38480;&#20844;&#21496;",
+            "gameCount": 1,
+            "id": 28,
+            "shortName": "&#25104;&#37117;&#40857;&#28170;",
+            "updateTime": 1522823988000
+        },
+        {
+            "createTime": 1522291178000,
+            "createTimeStr": "03-29 10:39",
+            "fullName": "&#19978;&#28023;&#20004;&#23431;&#20449;&#24687;&#31185;&#25216;&#26377;&#38480;&#20844;&#21496;",
+            "gameCount": 1,
+            "id": 27,
+            "shortName": "&#19978;&#28023;&#20004;&#23431;",
+            "updateTime": 1522291178000
+        }
+    ],
+    "msg": "",
+    "recordsTotal": 21
+}
+Casename: testCompanyListWithToken
+    Body: keyword=&page=1&rows=15&token=2bdcd5fbf9d54c8888c4a5d371757e43
+    StatusCode: 200
+    Response: {"msg":"","code":"0000","data":[{"id":42,"createTime":1534485866000,"updateTime":1534485866000,"createTimeStr":"08-17 14:04","shortName":"&#20154;&#20154;&#35270;&#39057;","fullName":"&#20154;&#20154;&#35270;&#39057;test","gameCount":0},{"id":41,"createTime":1534484216000,"updateTime":1534484216000,"createTimeStr":"08-17 13:36","shortName":"A&#24231;16&#27004;1604&#23460;","fullName":"&#20154;&#20154;&#35270;&#39057;","gameCount":2},{"id":39,"createTime":1533178517000,"updateTime":1533178517000,"createTimeStr":"08-02 10:55","shortName":"&#20154;&#20154;&#27979;&#35797;","fullName":"&#20154;&#20154;&#27979;&#35797;&#32593;&#32476;&#31185;&#25216;&#26377;&#38480;&#20844;&#21496;","gameCount":4},{"id":38,"createTime":1532411894000,"updateTime":1532411894000,"createTimeStr":"07-24 13:58","shortName":"&#28023;&#21335;&#30021;&#23089;","fullName":"&#28023;&#21335;&#30021;&#23089;&#32593;&#32476;&#31185;&#25216;&#26377;&#38480;&#20844;&#21496;","gameCount":5},{"id":37,"createTime":1529551994000,"updateTime":1529551994000,"createTimeStr":"06-21 11:33","shortName":"4399&#25163;&#28216;","fullName":"&#24191;&#24030;&#22235;&#19977;&#20061;&#20061;&#20449;&#24687;&#31185;&#25216;&#26377;&#38480;&#20844;&#21496;","gameCount":2},{"id":36,"createTime":1529551027000,"updateTime":1529551027000,"createTimeStr":"06-21 11:17","shortName":"37&#25163;&#28216;","fullName":"&#38669;&#23572;&#26524;&#26031;&#26032;&#38160;&#32593;&#32476;&#31185;&#25216;&#26377;&#38480;&#20844;&#21496;","gameCount":5},{"id":35,"createTime":1529550616000,"updateTime":1529550616000,"createTimeStr":"06-21 11:10","shortName":"&#19975;&#36798;&#38498;&#32447;&#28216;&#25103;","fullName":"&#38669;&#23572;&#26524;&#26031;&#28843;&#21160;&#32593;&#32476;&#31185;&#25216;&#26377;&#38480;&#20844;&#21496;","gameCount":1},{"id":34,"createTime":1529387444000,"updateTime":1529387444000,"createTimeStr":"06-19 13:50","shortName":"&#28023;&#21335;&#30021;&#37239;","fullName":"&#28023;&#21335;&#30021;&#37239;&#32593;&#32476;&#31185;&#25216;&#26377;&#38480;&#20844;&#21496;","gameCount":1},{"id":33,"createTime":1526974133000,"updateTime":1526974133000,"createTimeStr":"05-22 15:28","shortName":"&#27743;&#33487;&#39034;&#29609;","fullName":"&#27743;&#33487;&#39034;&#29609;&#20449;&#24687;&#31185;&#25216;&#26377;&#38480;&#20844;&#21496;","gameCount":1},{"id":32,"createTime":1526526133000,"updateTime":1526526133000,"createTimeStr":"05-17 11:02","shortName":"&#21335;&#20140;&#37239;&#30021;","fullName":"&#21335;&#20140;&#37239;&#30021;&#20449;&#24687;&#31185;&#25216;&#26377;&#38480;&#20844;&#21496;","gameCount":1},{"id":31,"createTime":1525919276000,"updateTime":1525919276000,"createTimeStr":"05-10 10:27","shortName":"&#23567;&#31859;&#20114;&#23089;-&#34701;&#21512;","fullName":"&#21271;&#20140;&#23567;&#31859;&#20114;&#23089;","gameCount":1},{"id":30,"createTime":1525334558000,"updateTime":1525334558000,"createTimeStr":"05-03 16:02","shortName":"&#31070;&#22855;&#28216;&#25103;-QK","fullName":"&#21271;&#20140;&#31070;&#22855;&#28216;&#25103;","gameCount":1},{"id":29,"createTime":1523584694000,"updateTime":1523584694000,"createTimeStr":"04-13 09:58","shortName":"&#27494;&#27721;&#24555;&#28216;","fullName":"&#27494;&#27721;&#24555;&#28216;&#20114;&#21160;&#20449;&#24687;&#25216;&#26415;&#26377;&#38480;&#20844;&#21496;","gameCount":1},{"id":28,"createTime":1522823988000,"updateTime":1522823988000,"createTimeStr":"04-04 14:39","shortName":"&#25104;&#37117;&#40857;&#28170;","fullName":"&#25104;&#37117;&#40857;&#28170;&#32593;&#32476;&#31185;&#25216;&#26377;&#38480;&#20844;&#21496;","gameCount":1},{"id":27,"createTime":1522291178000,"updateTime":1522291178000,"createTimeStr":"03-29 10:39","shortName":"&#19978;&#28023;&#20004;&#23431;","fullName":"&#19978;&#28023;&#20004;&#23431;&#20449;&#24687;&#31185;&#25216;&#26377;&#38480;&#20844;&#21496;","gameCount":1}],"recordsTotal":21}
+]]></stdout>
+<stderr/>
+</test>
+<test location="F:\github_code\httptest\game2_httpTest\testCase\gotham\testcompanyList.py" status="ok" test="CompanyList.testCompanyListWithoutToken" time="0.02">
+<stdout><![CDATA[
+&#35831;&#27714;&#30340;url&#26159;&#65306; http://test.rr.tv:8098/company/list
+
+&#21709;&#24212;&#30340;status_code&#26159;&#65306; 500
+
+&#21709;&#24212;&#30340;body&#26159;&#65306; 
+{
+    "error": "Internal Server Error",
+    "exception": "com.rrtv.game.exception.GameBaseException",
+    "message": "token&#20026;&#31354;",
+    "path": "/company/list",
+    "status": 500,
+    "timestamp": 1534732054500
+}
+Casename: testCompanyListWithoutToken
+    Body: keyword=&page=1&rows=15&token=
+    StatusCode: 500
+    Response: {"timestamp":1534732054500,"status":500,"error":"Internal Server Error","exception":"com.rrtv.game.exception.GameBaseException","message":"token&#20026;&#31354;","path":"/company/list"}
+]]></stdout>
+<stderr/>
+</test>
+<launch mode="run">
+<launch_memento><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration local="true" path="game2_httpTest testcompanyList.py"/>
+]]></launch_memento>
+</launch>
+</pydev-testsuite>

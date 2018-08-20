@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pydev-testrun version="1.0"?><pydev-testsuite>
+<summary errors="0" failures="0" finished="true" name="Test Run: 27" tests="3" total_time="Finished in: 0.26 secs."/>
+<test location="F:\github_code\httptest\game2_httpTest\testCase\gotham\testGameSaveUpdate.py" status="ok" test="gameSaveUpdateUpdate.testgameSaveUpdateUpdateUseCn" time="0.16">
+<stdout><![CDATA[Casename: testgameSaveUpdateUpdateUseCn
+  Body: companyId=1&deliveryUrl=%E6%B5%8B%E8%AF%95%E4%B8%AD%E6%96%87&id=1001&name=%E6%B5%8B%E8%AF%95%E4%B8%AD%E6%96%87&secretKey=123456&token=1b4e99f3749e4e79b486778d62251f56
+    StatusCode: 200
+    Response: {"msg":"","code":"0000","data":{"id":1001,"createTime":1512700864000,"updateTime":1515482088000,"createTimeStr":"12-08 10:41","channelId":10001,"name":"&#27979;&#35797;&#20013;&#25991;","companyId":1,"companyName":"&#25165;&#23453;","deliveryUrl":"&#27979;&#35797;&#20013;&#25991;","secretKey":"123456"},"recordsTotal":0}
+]]></stdout>
+<stderr/>
+</test>
+<test location="F:\github_code\httptest\game2_httpTest\testCase\gotham\testGameSaveUpdate.py" status="ok" test="gameSaveUpdateUpdate.testgameSaveUpdateUpdateUseEn" time="0.05">
+<stdout><![CDATA[Casename: testgameSaveUpdateUpdateUseEn
+  Body: companyId=1&deliveryUrl=testupdate&id=1001&name=testupdateEn&secretKey=123456&token=1b4e99f3749e4e79b486778d62251f56
+    StatusCode: 200
+    Response: {"msg":"","code":"0000","data":{"id":1001,"createTime":1512700864000,"updateTime":1515482088000,"createTimeStr":"12-08 10:41","channelId":10001,"name":"testupdateEn","companyId":1,"companyName":"&#25165;&#23453;","deliveryUrl":"testupdate","secretKey":"123456"},"recordsTotal":0}
+]]></stdout>
+<stderr/>
+</test>
+<test location="F:\github_code\httptest\game2_httpTest\testCase\gotham\testGameSaveUpdate.py" status="ok" test="gameSaveUpdateUpdate.testgameSaveUpdateUpdateUseNull" time="0.05">
+<stdout><![CDATA[Casename: testgameSaveUpdateUpdateUseNull
+  Body: companyId=1&deliveryUrl=&id=1001&name=&secretKey=123456&token=1b4e99f3749e4e79b486778d62251f56
+    StatusCode: 200
+    Response: {"msg":"","code":"0000","data":{"id":1001,"createTime":1512700864000,"updateTime":1515482088000,"createTimeStr":"12-08 10:41","channelId":10001,"name":"","companyId":1,"companyName":"&#25165;&#23453;","deliveryUrl":"","secretKey":"123456"},"recordsTotal":0}
+]]></stdout>
+<stderr/>
+</test>
+<launch mode="run">
+<launch_memento><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration local="true" path="game2_httpTest testGameSaveUpdate.py"/>
+]]></launch_memento>
+</launch>
+</pydev-testsuite>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pydev-testrun version="1.0"?><pydev-testsuite>
+<summary errors="0" failures="1" finished="true" name="Test Run: 26" tests="3" total_time="Finished in: 0.25 secs."/>
+<test location="F:\github_code\httptest\game2_httpTest\testCase\gotham\testGameSaveCreate.py" status="ok" test="gameSaveCreateCreate.testgameSaveCreateUpdateUseCn" time="0.14">
+<stdout><![CDATA[Casename: testgameSaveCreateUpdateUseCn
+  Body: companyId=1&deliveryUrl=%E6%B5%8B%E8%AF%95%E4%B8%AD%E6%96%87&id=1001&name=%E6%B5%8B%E8%AF%95%E4%B8%AD%E6%96%87&secretKey=123456&token=4d496f8ba082428e9db408fa7e5ab20c
+    StatusCode: 200
+    Response: {"msg":"","code":"0000","data":{"id":1001,"createTime":1512700864000,"updateTime":1515482088000,"createTimeStr":"12-08 10:41","channelId":10001,"name":"&#27979;&#35797;&#20013;&#25991;","companyId":1,"companyName":"&#25165;&#23453;","deliveryUrl":"&#27979;&#35797;&#20013;&#25991;","secretKey":"123456"},"recordsTotal":0}
+]]></stdout>
+<stderr/>
+</test>
+<test location="F:\github_code\httptest\game2_httpTest\testCase\gotham\testGameSaveCreate.py" status="fail" test="gameSaveCreateCreate.testgameSaveCreateUpdateUseEn" time="">
+<stdout><![CDATA[Connect DB successfully!
+]]></stdout>
+<stderr><![CDATA[Traceback (most recent call last):
+  File "F:\github_code\httptest\game2_httpTest\testCase\gotham\testGameSaveCreate.py", line 83, in testgameSaveCreateUpdateUseEn
+    self.assertEqual(a, 1)
+AssertionError: (1,) != 1
+]]></stderr>
+</test>
+<test location="F:\github_code\httptest\game2_httpTest\testCase\gotham\testGameSaveCreate.py" status="ok" test="gameSaveCreateCreate.testgameSaveCreateUpdateUseNull" time="0.03">
+<stdout><![CDATA[Casename: testgameSaveCreateUpdateUseNull
+  Body: companyId=1&deliveryUrl=&id=1001&name=&secretKey=123456&token=4d496f8ba082428e9db408fa7e5ab20c
+    StatusCode: 200
+    Response: {"msg":"","code":"0000","data":{"id":1001,"createTime":1512700864000,"updateTime":1515482088000,"createTimeStr":"12-08 10:41","channelId":10001,"name":"","companyId":1,"companyName":"&#25165;&#23453;","deliveryUrl":"","secretKey":"123456"},"recordsTotal":0}
+]]></stdout>
+<stderr/>
+</test>
+<launch mode="run">
+<launch_memento><![CDATA[<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration local="true" path="game2_httpTest testGameSaveCreate.py"/>
+]]></launch_memento>
+</launch>
+</pydev-testsuite>

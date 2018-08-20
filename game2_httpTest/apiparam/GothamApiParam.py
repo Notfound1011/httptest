@@ -36,6 +36,14 @@ class companyList():
     body1='keyword=&page=1&rows=15&token=%s'%token
     '''不携带token'''
     body2='keyword=&page=1&rows=15&token='
+    '''使用厂商名查询'''
+    keyword3='才宝'
+    keyword_quote3=parse.quote(keyword3)
+    body3='keyword=%s&page=1&rows=15&token=%s'%(keyword_quote3,token)
+    '''使用公司名查询'''
+    keyword4='上海才宝网络科技有限公司'
+    keyword_quote4=parse.quote(keyword4)
+    body4='keyword=%s&page=1&rows=15&token=%s'%(keyword_quote4,token)
     
 class gameList():
     '''

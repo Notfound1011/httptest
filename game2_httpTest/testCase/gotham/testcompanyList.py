@@ -33,7 +33,14 @@ class CompanyList(unittest.TestCase):
         self.status_code2 = 500
         self.errorno2 = 'Internal Server Error'
         self.msg2="token为空"
-
+        #携带厂商名称查询companylist
+        self.status_code3 = 200
+        self.errorno3 = '0000'
+        self.recordstotal3=1
+        #携带公司名称查询companylist
+        self.status_code4 = 200
+        self.errorno4 = '0000'
+        self.recordstotal4=1
     def setUp(self):
         """
         :return:
@@ -48,48 +55,99 @@ class CompanyList(unittest.TestCase):
         localConfigHttp.set_headers(self.headers)
         
         
-    def testCompanyListWithtoken(self):
+    def testCompanyListWithToken(self):
         """
         the 1st testcase
         携带token查询--->公司列表
         :return:
         """
         # set body 
-        localConfigHttp.set_data(companyList.body1)
+        self.body=companyList.body1
+        localConfigHttp.set_data(self.body)
         # post http
         self.response = localConfigHttp.post()
-
+ 
         # check result of response
         self.info = self.response.json()
         commonAw.show_return_msg(self.response)
         self.assertEqual(self.response.status_code, self.status_code1)
         self.assertEqual(self.info['code'], self.errorno1)
         self.assertEqual(self.info['msg'], self.msg1)
-        
+         
         #write_log
-        self.log.build_case_code(sys._getframe().f_code.co_name, str(self.status_code1))
+        self.log.build_case_body(sys._getframe().f_code.co_name,self.body)
+        self.log.build_case_code(str(self.status_code1))
         self.log.build_case_response(self.response.text)
-        
-    def testLoginWithAccountNotExist(self):
+         
+    def testCompanyListWithoutToken(self):
         """
-        the 2rd testcase
+        the 2nd testcase
         不携带token查询--->公司列表
         :return:
         """
         # set body 
-        localConfigHttp.set_data(companyList.body2)
+        self.body=companyList.body2
+        localConfigHttp.set_data(self.body)
         # post http
         self.response = localConfigHttp.post()
-
+ 
         # check result of response
         self.info = self.response.json()
         commonAw.show_return_msg(self.response)
         self.assertEqual(self.response.status_code, self.status_code2)
         self.assertEqual(self.info['error'], self.errorno2)
         self.assertEqual(self.info['message'], self.msg2)
+         
+        #write_log
+        self.log.build_case_body(sys._getframe().f_code.co_name,self.body)
+        self.log.build_case_code(str(self.status_code2))
+        self.log.build_case_response(self.response.text)
+    def testCompanyListWithFirm(self):
+        """
+        the 3rd  testcase
+        携带关键词---厂商--->公司列表
+        :return:
+        """
+        # set body
+        self.body=companyList.body3
+        localConfigHttp.set_data(self.body)
+        # post http
+        self.response = localConfigHttp.post()
+
+        # check result of response
+        self.info = self.response.json()
+        commonAw.show_return_msg(self.response)
+        self.assertEqual(self.response.status_code, self.status_code3)
+        self.assertEqual(self.info['code'], self.errorno3)
+        self.assertEqual(self.info['recordsTotal'], self.recordstotal3)
         
         #write_log
-        self.log.build_case_code(sys._getframe().f_code.co_name, str(self.status_code2))
+        self.log.build_case_body(sys._getframe().f_code.co_name,self.body)
+        self.log.build_case_code(str(self.status_code3))
+        self.log.build_case_response(self.response.text)
+
+    def testCompanyListWithCompanyname(self):
+        """
+        the 4th  testcase
+        携带关键词---公司名称--->公司列表
+        :return:
+        """
+        # set body 
+        self.body=companyList.body4
+        localConfigHttp.set_data(self.body)
+        # post http
+        self.response = localConfigHttp.post()
+
+        # check result of response
+        self.info = self.response.json()
+        commonAw.show_return_msg(self.response)
+        self.assertEqual(self.response.status_code, self.status_code4)
+        self.assertEqual(self.info['code'], self.errorno4)
+        self.assertEqual(self.info['recordsTotal'], self.recordstotal4)
+        
+        #write_log
+        self.log.build_case_body(sys._getframe().f_code.co_name,self.body)
+        self.log.build_case_code(str(self.status_code4))
         self.log.build_case_response(self.response.text)
 
     def tearDown(self):

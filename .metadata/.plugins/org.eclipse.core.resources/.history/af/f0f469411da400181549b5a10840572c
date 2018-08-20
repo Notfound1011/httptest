@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//common/HTMLTestReportCN.py=utf-8
+encoding//common/Log.py=utf-8
+encoding//common/commonAw.py=utf-8
+encoding//common/configEmail.py=utf-8
+encoding//testCase/gamesdk/testUserInfo.py=utf-8
+encoding//testCase/gamesdk/testUserLogin.py=utf-8
+encoding//testCase/gotham/testBusUserlogin.py=utf-8
+encoding//testCase/gotham/testCompanyList.py=utf-8
+encoding//testCase/gotham/testGameList.py=utf-8
+encoding//testCase/gotham/testGameSaveCreate.py=utf-8
+encoding//testCase/gotham/testGameSaveUpdate.py=utf-8
+encoding/readConfig.py=utf-8
